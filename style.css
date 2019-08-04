@@ -1,0 +1,18 @@
+/*.navigation {
+
+} */
+ul {
+	padding: 0;
+	margin: 0;
+}
+li {
+	color = #FFF;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+/*
+This is a comment
+*/
