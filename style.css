@@ -9,9 +9,10 @@ li {
 	color = #FFF;
 	display: inline-block;
 	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
-	text-transform: uppercase;
-	padding: 25 100 25 100;
+	font-size: 35px;
+	font-weight: 500
+	padding: 25px 100px 25px 100px;
+	font-variant: small-caps; 
 }
 
 /*
