@@ -4,6 +4,7 @@
 	bottom: 0;
 	width: 95%;
 }
+
 ul {
 	padding: 0;
 	margin: 0;
@@ -18,6 +19,10 @@ li {
 	margin: 0;
 	padding: 25px 100px 25px 100px;
 	font-variant: small-caps; 
+}
+
+.hover {
+	color: #167FFF;
 }
 
 /*
