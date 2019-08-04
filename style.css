@@ -2,6 +2,7 @@
 	background-color: transparent;
 	position: fixed;
 	bottom: 0;
+	width: 100%;
 }
 ul {
 	padding: 0;
