@@ -2,8 +2,8 @@
 
 } */
 ul {
-	padding: 0;
-	margin: 30px;
+	padding: 192px;
+	margin: 192px;
 }
 li {
 	color = #FFF;
@@ -11,7 +11,7 @@ li {
 	font-family: 'Raleway', sans-serif;
 	font-size: 35px;
 	font-weight: 500
-	padding: 25px 100px 25px 100px;
+	/*padding: 25px 100px 25px 100px;*/
 	font-variant: small-caps; 
 }
 
