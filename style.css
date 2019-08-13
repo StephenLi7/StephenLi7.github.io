@@ -17,8 +17,9 @@ li {
 	color = #FFF;
 	display: inline-block;
 	font-family: 'Raleway', sans-serif;
-	font-size: 30px;
-	font-weight: 400
+	/* Problem is that on smaller screens, the formatting blows up */
+	font-size: 35px;
+	font-weight: 500
 	margin: 0;
 	padding: 25px 100px 25px 100px;
 	font-variant: small-caps; 
