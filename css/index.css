@@ -1,32 +1,8 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
 @StephenLi7 
-JasonD94
-/
-jasond94.github.io
-1
-1115
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
-jasond94.github.io/css/index.css
-@JasonD94 JasonD94 adding new job & dates to the site
-b88059c 28 days ago
-183 lines (159 sloc)  4.62 KB
+
   
 /*
     File: index.css
-    Jason Downing
-    Contact: jason@downing.io
-    MIT Licensed - see http://opensource.org/licenses/MIT for details.
-    Anyone may freely use this code. Just don't sue me if it breaks stuff.
-    Created: September 3rd, 2015.
-    Last Updated: Feb 6th, 2018.
-    This file contains CSS classes / IDs used to override the Creative Bootstrap Theme
 */
 
 .text-small {
@@ -142,7 +118,6 @@ a.text-white-link:active {
 
 /* Adding some background color options */
 .bg-green {
-	/* Spotify Green - hex code from: https://brandpalettes.com/spotify-color-codes/ */
 	background-color: #1DB954 !important;
 }
 
@@ -196,15 +171,3 @@ a.text-white-link:active {
 	color: #E61231 !important;
 	font-weight: bold;
 }
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
