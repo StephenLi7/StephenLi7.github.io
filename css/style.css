@@ -1,17 +1,9 @@
 body {
-	background-color: #f8f8f8;
-	font-family: 'Lato', sans-serif;
-	background: url(https://github.com/StephenLi7/StephenLi7.github.io/blob/main/images/background.jpg);
+	margin: 0;
+	padding: 0;
+	background: url(images/background.jpg);
 	background-repeat: no-repeat;
 	background-size:
-
-}
-
-.container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 50px 20px;
-	text-align: center;
 }
 
 header {
@@ -103,8 +95,22 @@ footer {
 	padding: 10px;
 }
 
+.container {
+	width: 450px;
+	margin: auto;
+	margin-top: 5%
+	padding: 40px;
+	text-align: center;
+}
+
 .profile-pic {
 	border-radius: 50%;
 	width: 600px;
 	height: 600px;
+}
+
+.container h1 {
+	font-family: 'Lato', sans-serif;
+  font-weight: 300;
+	font-size: 48px;
 }
