@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	background: url(images/background.jpg);
 	background-repeat: no-repeat;
-	background-size:
+	background-size: cover;
 }
 
 header {
@@ -96,7 +96,7 @@ footer {
 }
 
 .container {
-	width: 450px;
+	width: auto;
 	margin: auto;
 	padding: 40px;
 	text-align: center;
