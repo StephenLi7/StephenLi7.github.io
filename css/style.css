@@ -103,8 +103,8 @@ footer {
 }
 
 .profile-pic {
-	width: 360px;
-	height: 360px;
+	width: auto;
+	height: auto;
 }
 
 .container h1 {
