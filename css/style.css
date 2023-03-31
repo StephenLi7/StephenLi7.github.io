@@ -69,7 +69,7 @@ li {
 }
 
 
-a {
+/* a {
 	width: 6vmin;
 	height: 6vmin;
 	box-sizing: border-box;
@@ -79,7 +79,7 @@ a {
 	transform: rotate(45deg);
 
 	&::before {
-		content: 'Enter';
+		content: '';
 		width: 100%;
 		height: 100%;
 		border-width: .8vmin .8vmin 0 0;
@@ -174,14 +174,14 @@ footer {
 	/* background-attachment: fixed; */
 }
 
-/* .landing-arrow {
+.landing-arrow {
 	width: 6vmin;
 	height: 6vmin;
 	box-sizing: border-box;
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: rotate(0deg);
+	transform: rotate(45deg);
 
 	&::before {
 		content: '';
@@ -211,7 +211,7 @@ footer {
 	}
 
 	&:hover::after {
-		transform: rotate(0deg);
+		transform: rotate(45deg);
 		border-color: orange;
 		height: 120%;
 	}
@@ -222,4 +222,3 @@ footer {
 	}
 
 }
-*/
