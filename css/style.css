@@ -174,6 +174,10 @@ footer {
 	/* background-attachment: fixed; */
 }
 
+.landing-div {
+	position: relative;
+}
+
 div.landing-arrow {
 	width: 6vmin;
 	height: 6vmin;
