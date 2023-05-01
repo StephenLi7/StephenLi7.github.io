@@ -176,6 +176,7 @@ footer {
 
 .landing-div {
 	position: relative;
+	height: auto;
 }
 
 div.landing-arrow {
