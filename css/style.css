@@ -93,7 +93,8 @@ footer {
 
 .profile-pic {
 	max-width: 100%;
-	width: auto;
+	/*width: auto;
+	*/
 	height: auto;
 	align-content: center;
 }
