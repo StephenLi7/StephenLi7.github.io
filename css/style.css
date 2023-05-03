@@ -184,7 +184,7 @@ div.landing-arrow {
 	width: 4vmin;
 	height: 4vmin;
 	box-sizing: border-box;
-	position: absolute;
+	position: static;
 	left: 50%;
 	top: 50%;
 	transform: rotate(45deg);
