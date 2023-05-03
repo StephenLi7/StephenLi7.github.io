@@ -177,11 +177,12 @@ footer {
 .landing-div {
 	position: relative;
 	height: auto;
+	align-content: center;
 }
 
 div.landing-arrow {
-	width: 6vmin;
-	height: 6vmin;
+	width: 4vmin;
+	height: 4vmin;
 	box-sizing: border-box;
 	position: absolute;
 	left: 50%;
