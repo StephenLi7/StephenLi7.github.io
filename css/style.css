@@ -92,7 +92,7 @@ footer {
 }
 
 .profile-pic {
-	max-width: 15vw;
+	max-width: 50vw;
 	height: auto;
 	align-content: center;
 }
@@ -126,8 +126,8 @@ footer {
 }
 
 div.landing-arrow {
-	width: 3vmin;
-	height: 3vmin;
+	width: 6vmin;
+	height: 6vmin;
 	box-sizing: border-box;
 	position: absolute;
 	left: 50%;
