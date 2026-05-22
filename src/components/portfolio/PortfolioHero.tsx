@@ -62,10 +62,12 @@ const PortfolioHero = () => {
           <Linkedin className="w-4 h-4 mr-2" />
           LinkedIn
         </Button>
-        <Button variant="outline" size="sm" className="hover:bg-[#9999a1]/10 dark:hover:bg-[#66666e]/20 border-[#66666e] dark:border-[#9999a1] text-white hover:text-[#cbf3f0]">
-          <Download className="w-4 h-4 mr-2" />
-          My Resume
-        </Button>
+        <a href="/Resume_Stephen_Li.pdf" download="Resume_Stephen_Li.pdf">
+          <Button variant="outline" size="sm" className="hover:bg-[#9999a1]/10 dark:hover:bg-[#66666e]/20 border-[#66666e] dark:border-[#9999a1] text-white hover:text-[#cbf3f0]">
+            <Download className="w-4 h-4 mr-2" />
+            My Resume
+          </Button>
+        </a>
         <Button 
           variant="outline" 
           size="sm" 
