@@ -25,7 +25,7 @@ const EducationSection = () => {
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
             <div className="flex items-center gap-3">
               <img
-                src="/lovable-uploads/9a78ce67-52fc-4092-a0df-14f78328d38d.png"
+                src="/logos/upenn_logo.jpg"
                 alt="University of Pennsylvania Logo"
                 className="w-8 h-8 object-contain shrink-0"
               />

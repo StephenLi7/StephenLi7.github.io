@@ -10,7 +10,7 @@ const ExperienceSection = () => {
       period: "July 2025 - Present",
       description: "Updates to come soon!",
       skills: ["SQL", "Tableau", "Product Growth"],
-      logo: "/lovable-uploads/74b5060f-f2ce-4530-b396-686233f1c15b.png"
+      logo: "/logos/meta_logo.jpg"
     },
     {
       title: "Product Analyst",
@@ -24,7 +24,7 @@ const ExperienceSection = () => {
         </ul>
       ),
       skills: ["SQL", "Tableau", "A/B Testing and Experimentation", "Product Analytics", "Scala"],
-      logo: "/lovable-uploads/cb5c3752-bba0-4023-8b36-568af755d1f7.png"
+      logo: "/logos/cloudflare_logo.jpg"
     },
     {
       title: "Product Analyst",
@@ -37,7 +37,7 @@ const ExperienceSection = () => {
         </ul>
       ),
       skills: ["SQL", "Mode Analytics", "Product Analytics", "Product Management", "Amplitude", "ETL"],
-      logo: "/lovable-uploads/79cdbe73-ff20-4968-bed5-a760a7f1a194.png"
+      logo: "/logos/goodeggs_logo.jpg"
     },
     {
       title: "Business Analyst (Data Science)",
@@ -50,7 +50,7 @@ const ExperienceSection = () => {
         </ul>
       ),
       skills: ["Python", "SQL", "Data Science", "Pandas", "Business Analytics"],
-      logo: "/lovable-uploads/8d0a1b29-e71d-43f9-a8f2-ae8f557a7bcb.png"
+      logo: "/logos/capital_one_logo.jpg"
     },
     {
       title: "Product Management and Analytics Intern",
@@ -63,7 +63,7 @@ const ExperienceSection = () => {
         </ul>
       ),
       skills: ["SQL", "Amplitude", "Figma", "Product Management", "A/B Testing and Experimentation"],
-      logo: "/lovable-uploads/8d0a1b29-e71d-43f9-a8f2-ae8f557a7bcb.png"
+      logo: "/logos/capital_one_logo.jpg"
     }
   ];
 
