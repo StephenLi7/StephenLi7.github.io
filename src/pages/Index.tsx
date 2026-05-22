@@ -9,7 +9,7 @@ const Index = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/lovable-uploads/e8c47696-666c-4b81-8efb-ada0ac5f3d2f.png)' }}
+        style={{ backgroundImage: 'url(/images/background.png)' }}
       />
       
       {/* Overlay for better text readability */}
@@ -22,7 +22,7 @@ const Index = () => {
           <div className="flex justify-center mb-4 md:mb-8">
             <div className="w-24 h-24 md:w-32 md:h-32 rounded-full shadow-lg overflow-hidden">
               <img
-                src="/lovable-uploads/bc725188-af09-4c81-9e69-e920d336fba2.png"
+                src="/images/headshot.png"
                 alt="Stephen Li headshot"
                 className="w-full h-full object-cover scale-150"
               />

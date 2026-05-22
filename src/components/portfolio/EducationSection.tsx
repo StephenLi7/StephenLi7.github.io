@@ -27,7 +27,7 @@ const EducationSection = () => {
               <img
                 src="/logos/upenn_logo.jpg"
                 alt="University of Pennsylvania Logo"
-                className="w-8 h-8 object-contain shrink-0"
+                className="w-12 h-12 object-contain shrink-0"
               />
               <div>
                 <CardTitle className="text-xl text-white">University of Pennsylvania</CardTitle>

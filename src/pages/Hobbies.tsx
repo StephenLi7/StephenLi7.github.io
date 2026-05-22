@@ -43,7 +43,7 @@ const Hobbies = () => {
                   rel="noopener noreferrer"
                 >
                   <Button variant="outline" size="sm" className="bg-white/10 text-white border-white/20 hover:bg-white/20">
-                    <img src="/lovable-uploads/22b04770-07fd-4df8-90da-68a665e0cd3d.png" alt="Instagram" className="w-4 h-4 mr-2" />
+                    <img src="/logos/instagram_logo.png" alt="Instagram" className="w-4 h-4 mr-2" />
                     My Food Instagram
                   </Button>
                 </a>
@@ -53,7 +53,7 @@ const Hobbies = () => {
                   rel="noopener noreferrer"
                 >
                   <Button variant="outline" size="sm" className="bg-white/10 text-white border-white/20 hover:bg-white/20">
-                    <img src="/lovable-uploads/04780bcc-0fa6-49b9-a714-a44ef71e1adb.png" alt="Yelp" className="w-4 h-4 mr-2" />
+                    <img src="/logos/yelp_logo.png" alt="Yelp" className="w-4 h-4 mr-2" />
                     My Yelp Elite Profile
                   </Button>
                 </a>
@@ -97,7 +97,7 @@ const Hobbies = () => {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div className="aspect-square overflow-hidden rounded-lg group relative">
                   <img 
-                    src="/lovable-uploads/ee42f944-f471-4953-83b9-30e833b7e0fc.png" 
+                    src="/images/mountain_skiing.png" 
                     alt="Mountain skiing"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -107,7 +107,7 @@ const Hobbies = () => {
                 </div>
                 <div className="aspect-square overflow-hidden rounded-lg group relative">
                   <img 
-                    src="/lovable-uploads/d96bbfc1-4fc5-4b1c-a4de-7eddb411b02e.png" 
+                    src="/images/mountain_rocks.png" 
                     alt="Snowy mountain rocks"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -117,7 +117,7 @@ const Hobbies = () => {
                 </div>
                 <div className="aspect-square overflow-hidden rounded-lg group relative">
                   <img 
-                    src="/lovable-uploads/c7d5bc76-33ae-4a03-8f98-752fe840159c.png" 
+                    src="/images/mountain_lake.png" 
                     alt="Mountain lake view"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -127,7 +127,7 @@ const Hobbies = () => {
                 </div>
                 <div className="aspect-square overflow-hidden rounded-lg group relative">
                   <img 
-                    src="/lovable-uploads/ee668bc4-e9f1-437a-a645-d306c2819f82.png" 
+                    src="/images/rock_climbing.png" 
                     alt="Rock climbing"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -137,7 +137,7 @@ const Hobbies = () => {
                 </div>
                 <div className="aspect-square overflow-hidden rounded-lg group relative">
                   <img 
-                    src="/lovable-uploads/4e3fa9ee-5126-4d2f-9f41-484d5c581d4a.png" 
+                    src="/images/yosemite_valley.png" 
                     alt="Valley view"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -147,7 +147,7 @@ const Hobbies = () => {
                 </div>
                 <div className="aspect-square overflow-hidden rounded-lg group relative">
                   <img 
-                    src="/lovable-uploads/dc6a1213-765d-4852-ac48-eccb0f211f22.png" 
+                    src="/images/haiku_steps.png" 
                     alt="Hiking trail"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />

@@ -80,7 +80,7 @@ const ExperienceSection = () => {
                     <img
                       src={exp.logo}
                       alt={`${exp.company} Logo`}
-                      className="w-8 h-8 object-contain shrink-0"
+                      className="w-12 h-12 object-contain shrink-0"
                     />
                   )}
                   <div>

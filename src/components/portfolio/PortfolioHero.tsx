@@ -31,7 +31,7 @@ const PortfolioHero = () => {
       <div className="mb-8">
         <div className="w-32 h-32 rounded-full mx-auto mb-6 shadow-xl overflow-hidden">
           <img 
-            src="/lovable-uploads/bc725188-af09-4c81-9e69-e920d336fba2.png" 
+            src="/images/headshot.png" 
             alt="Stephen Li headshot"
             className="w-full h-full object-cover scale-150"
           />
