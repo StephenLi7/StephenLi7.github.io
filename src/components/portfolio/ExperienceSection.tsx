@@ -8,7 +8,17 @@ const ExperienceSection = () => {
       title: "Product Growth Analyst",
       company: "Meta",
       period: "July 2025 - Present",
-      description: "Updates to come soon!",
+      description: (
+        <div>
+          <p className="font-semibold text-white mb-2">Facebook Notifications</p>
+          <ul className="list-disc list-inside space-y-2">
+            <li>Lead a cross-org initiative to unify push and email notification systems; designed multi-region capacity test identifying impact of 200K+ DAU, and drive ML optimization and roadmap decisions</li>
+            <li>Own analytics and reporting for Facebook Widgets, driving performance insights for Events widget launch and experimentation pipeline</li>
+            <li>Develop the use of cross-app and device-level signals to improve ML-based notification timing; leveraged battery state and Focus Mode signals in timing, leading to a 4% increase in CTR</li>
+            <li>Drove push reachability strategy via analysis of user engagement, leading to surface expansion of upsells</li>
+          </ul>
+        </div>
+      ),
       skills: ["SQL", "Tableau", "Product Growth"],
       logo: "/logos/meta_logo.jpg"
     },
