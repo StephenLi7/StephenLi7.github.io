@@ -20,11 +20,11 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center space-y-5 md:space-y-8 animate-fade-in">
           {/* Headshot */}
           <div className="flex justify-center mb-4 md:mb-8">
-            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full shadow-lg overflow-hidden">
+            <div className="w-24 h-24 md:w-48 md:h-48 rounded-full shadow-lg overflow-hidden">
               <img
-                src="/images/headshot.png"
+                src="/images/headshot.jpg"
                 alt="Stephen Li headshot"
-                className="w-full h-full object-cover scale-150"
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </div>

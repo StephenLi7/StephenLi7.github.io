@@ -29,11 +29,11 @@ const PortfolioHero = () => {
   return (
     <div className="text-center mb-16 animate-fade-in">
       <div className="mb-8">
-        <div className="w-32 h-32 rounded-full mx-auto mb-6 shadow-xl overflow-hidden">
-          <img 
-            src="/images/headshot.png" 
+        <div className="w-32 h-32 md:w-48 md:h-48 rounded-full mx-auto mb-6 shadow-xl overflow-hidden">
+          <img
+            src="/images/headshot.jpg"
             alt="Stephen Li headshot"
-            className="w-full h-full object-cover scale-150"
+            className="w-full h-full object-cover object-top"
           />
         </div>
       </div>
