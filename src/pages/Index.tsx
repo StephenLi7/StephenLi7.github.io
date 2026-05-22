@@ -18,12 +18,14 @@ const Index = () => {
       {/* Main Content */}
       <div className="flex-1 flex items-center justify-center px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          {/* Headshot placeholder */}
+          {/* Headshot */}
           <div className="flex justify-center mb-8">
-            <div className="w-32 h-32 bg-[#66666e] rounded-full shadow-lg flex items-center justify-center">
-              <div className="w-28 h-28 bg-[#e6e6e9] dark:bg-[#66666e] rounded-full flex items-center justify-center">
-                <span className="text-white text-sm font-medium">Headshot</span>
-              </div>
+            <div className="w-32 h-32 rounded-full shadow-lg overflow-hidden">
+              <img 
+                src="/lovable-uploads/bc725188-af09-4c81-9e69-e920d336fba2.png" 
+                alt="Stephen Li headshot"
+                className="w-full h-full object-cover scale-150"
+              />
             </div>
           </div>
 

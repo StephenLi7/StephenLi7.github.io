@@ -1,3 +1,4 @@
+
 import { ArrowLeft, Camera } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -60,9 +61,9 @@ const Photos = () => {
       {/* Navigation */}
       <nav className="p-6 flex justify-between items-center">
         <Link to="/portfolio">
-          <Button variant="ghost" size="sm" className="hover:bg-[#e6e6e9]/50 dark:hover:bg-[#66666e]/50 transition-colors text-white hover:[&>*]:text-[#cbf3f0]">
+          <Button variant="ghost" size="sm" className="hover:bg-[#e6e6e9]/50 dark:hover:bg-[#66666e]/50 transition-colors text-white hover:text-[#cbf3f0]">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
+            Back to Portfolio
           </Button>
         </Link>
       </nav>
@@ -73,7 +74,7 @@ const Photos = () => {
           <div className="flex items-center justify-center gap-2 mb-4">
             <Camera className="w-8 h-8 text-white" />
             <h1 className="text-4xl md:text-6xl font-bold text-white">
-              Photos by Me
+              My Photos
             </h1>
           </div>
         </div>
@@ -84,34 +85,77 @@ const Photos = () => {
             <CardContent className="p-8">
               <h2 className="text-2xl font-bold text-white mb-4">About This Collection</h2>
               <p className="text-white text-lg leading-relaxed mb-4">
-                Welcome to my photography album - a curated collection of moments, emotions, and stories captured through my lens. 
-                Each photograph represents a unique perspective on the world around us, from intimate portraits to sweeping landscapes.
+                All of these photos were either shot on an iPhone or a disposable film camera. I am by no means a professional photographer. But, I do enjoy taking photos that represent a curated collection of moments, emotions, and stories.
               </p>
               <p className="text-white text-lg leading-relaxed">
-                Photography has always been my way of freezing time, of finding beauty in the ordinary and extraordinary alike. 
-                This collection spans various subjects and styles, reflecting my journey as both a photographer and an observer of life. 
-                I hope these images inspire you to see the world through a different lens.
+                Photos are a great way for me to capture moments in my life. I hope you enjoy!
               </p>
             </CardContent>
           </Card>
         </div>
 
-        {/* Photo Mosaic */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {photos.map((photo) => (
-            <Card key={photo.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/60 backdrop-blur-sm group">
-              <div className="aspect-video overflow-hidden">
-                <img 
-                  src={photo.src} 
-                  alt={photo.alt}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-4">
-                <p className="text-sm text-white italic">{photo.caption}</p>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Mountain Sports Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-white mb-8">Mountain Sports</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {photos.filter(photo => [7].includes(photo.id)).map((photo) => (
+              <Card key={photo.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/60 backdrop-blur-sm group">
+                <div className="aspect-video overflow-hidden relative">
+                  <img 
+                    src={photo.src} 
+                    alt={photo.alt}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
+                    <p className="text-white text-sm p-2">{photo.caption}</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Volleyball Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-white mb-8">Volleyball</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* No photos in this section yet */}
+            <div className="col-span-full text-center text-white/70 py-8">
+              <p>Photos coming soon...</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Culinary Adventures Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-white mb-8">Culinary Adventures</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* No photos in this section yet */}
+            <div className="col-span-full text-center text-white/70 py-8">
+              <p>Photos coming soon...</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Other Photos I Like Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-white mb-8">Other Photos I Like</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {photos.filter(photo => ![7].includes(photo.id)).map((photo) => (
+              <Card key={photo.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/60 backdrop-blur-sm group">
+                <div className="aspect-video overflow-hidden relative">
+                  <img 
+                    src={photo.src} 
+                    alt={photo.alt}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
+                    <p className="text-white text-sm p-2">{photo.caption}</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </div>
