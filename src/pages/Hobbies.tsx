@@ -1,22 +1,14 @@
 
-import { ArrowLeft, Instagram, Volleyball, Mountain, ExternalLink, UtensilsCrossed } from "lucide-react";
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { Instagram, Volleyball, Mountain, ExternalLink, UtensilsCrossed } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import SiteNav from "@/components/SiteNav";
 
 const Hobbies = () => {
 
   return (
     <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#000000]">
-      {/* Navigation */}
-      <nav className="p-6 flex justify-between items-center">
-        <Link to="/portfolio">
-          <Button variant="ghost" size="sm" className="hover:bg-[#e6e6e9]/50 dark:hover:bg-[#66666e]/50 transition-colors text-white hover:text-[#cbf3f0]">
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Portfolio
-          </Button>
-        </Link>
-      </nav>
+      <SiteNav current="hobbies" />
 
       <div className="max-w-6xl mx-auto px-6 pb-20">
         {/* Header */}

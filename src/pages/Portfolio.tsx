@@ -1,7 +1,5 @@
 
-import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import SiteNav from "@/components/SiteNav";
 import PortfolioHero from "@/components/portfolio/PortfolioHero";
 import ExperienceSection from "@/components/portfolio/ExperienceSection";
 import EducationSection from "@/components/portfolio/EducationSection";
@@ -10,28 +8,7 @@ import ProjectsSection from "@/components/portfolio/ProjectsSection";
 const Portfolio = () => {
   return (
     <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#000000]">
-      {/* Navigation */}
-      <nav className="p-4 md:p-6 flex justify-between items-center gap-2">
-        <Link to="/">
-          <Button variant="ghost" size="sm" className="hover:bg-[#e6e6e9]/50 dark:hover:bg-[#66666e]/50 transition-colors text-white hover:text-[#cbf3f0]">
-            <ArrowLeft className="w-4 h-4 mr-1 md:mr-2" />
-            <span className="hidden sm:inline">Back to Landing</span>
-            <span className="sm:hidden">Back</span>
-          </Button>
-        </Link>
-        <div className="flex gap-2">
-          <Link to="/hobbies">
-            <Button variant="outline" size="sm" className="border-[#66666e] dark:border-[#9999a1] text-white hover:bg-[#66666e]/20 hover:text-[#cbf3f0]">
-              Hobbies
-            </Button>
-          </Link>
-          <Link to="/photos">
-            <Button variant="outline" size="sm" className="border-[#66666e] dark:border-[#9999a1] text-white hover:bg-[#66666e]/20 hover:text-[#cbf3f0]">
-              Photos
-            </Button>
-          </Link>
-        </div>
-      </nav>
+      <SiteNav current="portfolio" />
 
       <div className="max-w-6xl mx-auto px-6 pb-20">
         <PortfolioHero />
