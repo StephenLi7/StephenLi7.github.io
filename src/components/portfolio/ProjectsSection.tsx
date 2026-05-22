@@ -20,14 +20,12 @@ const ProjectsSection = () => {
         {projects.map((project, index) => (
           <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/60 backdrop-blur-sm">
             <CardHeader>
-              <div className="flex justify-between items-start">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <Mic className="w-5 h-5 text-white" />
-                    <CardTitle className="text-xl text-white">{project.title}</CardTitle>
-                  </div>
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+                <div className="flex items-center gap-2">
+                  <Mic className="w-5 h-5 text-white shrink-0" />
+                  <CardTitle className="text-xl text-white">{project.title}</CardTitle>
                 </div>
-                <Badge variant="secondary" className="bg-[#9999a1]/20 dark:bg-[#66666e]/50 text-white">
+                <Badge variant="secondary" className="bg-[#9999a1]/20 dark:bg-[#66666e]/50 text-white self-start sm:self-auto whitespace-nowrap">
                   {project.period}
                 </Badge>
               </div>

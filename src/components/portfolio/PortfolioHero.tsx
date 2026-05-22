@@ -43,7 +43,7 @@ const PortfolioHero = () => {
       </h1>
       <p className="text-xl text-white mb-8">Data and Product Enthusiast</p>
       
-      <div className="flex justify-center space-x-4 mb-8">
+      <div className="flex flex-wrap justify-center gap-3 mb-8">
         <Button 
           variant="outline" 
           size="sm" 
