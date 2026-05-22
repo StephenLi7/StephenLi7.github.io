@@ -102,7 +102,7 @@ const Hobbies = () => {
               </CardDescription>
               
               {/* Mountain Photos Grid */}
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div className="aspect-square overflow-hidden rounded-lg group relative">
                   <img 
                     src="/lovable-uploads/ee42f944-f471-4953-83b9-30e833b7e0fc.png" 
