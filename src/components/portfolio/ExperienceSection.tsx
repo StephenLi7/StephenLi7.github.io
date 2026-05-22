@@ -19,7 +19,7 @@ const ExperienceSection = () => {
           </ul>
         </div>
       ),
-      skills: ["SQL", "Tableau", "Product Growth"],
+      skills: ["SQL", "A/B Testing and Experimentation", "Dashboard Building (internal tools)", "Python", "ML Training", "Claude Code"],
       logo: "/logos/meta_logo.jpg"
     },
     {
