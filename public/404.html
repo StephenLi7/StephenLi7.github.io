@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Stephen Li</title>
+    <script>
+      // Encode the current path into a query string and redirect to the root.
+      // GitHub Pages serves this file for any path it can't find, so this
+      // bounces the visitor back to index.html with the original path intact.
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.host + '/' +
+        '?/' +
+        l.pathname.slice(1).replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
