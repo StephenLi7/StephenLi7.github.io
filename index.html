@@ -5,8 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
-      // Decode the path that 404.html encoded into the query string and
-      // restore it via history.replaceState before React Router initialises.
+      // 1. Apply theme class synchronously so there is no flash of unstyled
+      //    content before React and the ThemeProvider initialise.
+      (function () {
+        var stored = localStorage.getItem('vite-ui-theme');
+        var dark = stored === 'dark' ||
+          (!stored || stored === 'system') &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.classList.add(dark ? 'dark' : 'light');
+        document.documentElement.style.backgroundColor = dark ? '#000000' : '#f4f4f6';
+      })();
+
+      // 2. Decode the path that 404.html encoded into the query string and
+      //    restore it via history.replaceState before React Router initialises.
       (function (l) {
         if (l.search[1] === '/') {
           var decoded = l.search.slice(1).split('&').map(function (s) {
