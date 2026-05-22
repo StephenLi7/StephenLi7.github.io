@@ -23,14 +23,14 @@ const ExperienceSection = () => {
       logo: "/logos/meta_logo.jpg"
     },
     {
-      title: "Product Analyst",
+      title: "Product Analyst II",
       company: "Cloudflare",
       period: "September 2023 - June 2025",
       description: (
         <ul className="list-disc list-inside space-y-2">
-          <li>Partner with product managers and engineers on the Application Performance and Developer Platform teams to build reporting dashboards using Tableau, define KPIs, and develop product strategy.</li>
-          <li>Built and maintained tooling that tracked backend metrics (product usage, attach rate, annual contract value etc.) used for all of our A/B tests on the customer dashboard. Presented actionable results to the PM such as: increases in upgrades in paid plans, product adoption rates, and product usage metrics. My work helped speed up evaluation of how successful experiments were and allowed us to make changes default, or ramp down an experiment.</li>
-          <li>Work with engineers to add new features to an internal data product used by finance and sales to identify upsell opportunities, leading to large expansion and new customer sales.</li>
+          <li>Built A/B testing and experimentation platform enabling product teams to evaluate usage, conversion, and revenue metrics, driving +16% subscriptions, +7% adoption, +23% upgrades</li>
+          <li>Defined KPIs, conducted performance analysis, and built Tableau dashboards for Application Performance and Developer Platform products</li>
+          <li>Partnered with engineering to enhance internal data tools, driving $250K+ ARR expansion through upsell insights</li>
         </ul>
       ),
       skills: ["SQL", "Tableau", "A/B Testing and Experimentation", "Product Analytics", "Scala"],
