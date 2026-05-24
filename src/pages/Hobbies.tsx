@@ -1,5 +1,5 @@
 
-import { Instagram, Volleyball, Mountain, ExternalLink, UtensilsCrossed } from "lucide-react";
+import { Instagram, Volleyball, Mountain, Snowflake, Footprints, Sprout, UtensilsCrossed } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import SiteNav from "@/components/SiteNav";
@@ -17,10 +17,10 @@ const Hobbies = () => {
             My Hobbies
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Outside of work, I enjoy exploring a range of hobbies—from very active ones to more creative and adventurous ones. I appreciate the balance they bring, the opportunity to learn something new, and the growth involved in each one.
+            Outside of work and the daily hustle and bustle, I enjoy a variety of hobbies. I have always played sports and love being outdoors, but have discovered more creative and hands on ones in recent years.
           </p>
           <p className="text-xl text-white max-w-3xl mx-auto mt-4">
-            If you share similar interests, I'd be happy to exchange recommendations.
+            I appreciate that different hobbies provide an opportunity to learn something new, and the challenge that comes with it. If you share similar interests, I'd love to exchange recommendations!
           </p>
         </div>
 
@@ -102,80 +102,78 @@ const Hobbies = () => {
             </CardHeader>
           </Card>
 
-          {/* Mountain Sports Hobby */}
+          {/* Skiing Hobby */}
           <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/60 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
-                <Mountain className="w-8 h-8 text-white" />
-                <CardTitle className="text-2xl text-white">Mountain Sports</CardTitle>
+                <Snowflake className="w-8 h-8 text-white" />
+                <CardTitle className="text-2xl text-white">Skiing</CardTitle>
               </div>
               <CardDescription className="text-lg text-white mb-6">
-                I was born in Colorado and spent half of my childhood there. Being so close to the Rockies, I grew up skiing, camping, and hiking from a young age. I still love skiing and hiking and have traveled across North America to visit new mountains to enjoy both hobbies. In the long term, I hope to visit every US National park and ski and hike at some of the largest mountains around the world.
+                I was born in Colorado and grew up skiing the Rockies from a young age. I still try to get on the mountain every season and have skied across North America — from Jackson Hole and Alta to Whistler and Banff. In the long term, I'd love to ski some of the biggest mountains in the world.
               </CardDescription>
-              
-              {/* Mountain Photos Grid */}
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div className="aspect-square overflow-hidden rounded-lg group relative">
-                  <img 
-                    src="/images/mountain_skiing.png" 
-                    alt="Mountain skiing"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
-                    <p className="text-white text-sm p-2">Night ski at Brighton Ski Resort</p>
+                {[
+                  { src: "/images/mountain_skiing.png", alt: "Night skiing", caption: "Night ski at Brighton Ski Resort" },
+                  { src: "/images/mountain_rocks.png", alt: "Kings and Queens of Corbets", caption: "Kings and Queens of Corbets" },
+                ].map((photo) => (
+                  <div key={photo.src} className="aspect-square overflow-hidden rounded-lg group relative">
+                    <img
+                      src={photo.src}
+                      alt={photo.alt}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
+                      <p className="text-white text-sm p-2">{photo.caption}</p>
+                    </div>
                   </div>
-                </div>
-                <div className="aspect-square overflow-hidden rounded-lg group relative">
-                  <img 
-                    src="/images/mountain_rocks.png" 
-                    alt="Snowy mountain rocks"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
-                    <p className="text-white text-sm p-2">Kings and Queens of Corbets</p>
-                  </div>
-                </div>
-                <div className="aspect-square overflow-hidden rounded-lg group relative">
-                  <img 
-                    src="/images/mountain_lake.png" 
-                    alt="Mountain lake view"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
-                    <p className="text-white text-sm p-2">Top of hike overlooking Lake Louise in Banff</p>
-                  </div>
-                </div>
-                <div className="aspect-square overflow-hidden rounded-lg group relative">
-                  <img 
-                    src="/images/rock_climbing.png" 
-                    alt="Rock climbing"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
-                    <p className="text-white text-sm p-2">Before climbing the cables of Half Dome</p>
-                  </div>
-                </div>
-                <div className="aspect-square overflow-hidden rounded-lg group relative">
-                  <img 
-                    src="/images/yosemite_valley.png" 
-                    alt="Valley view"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
-                    <p className="text-white text-sm p-2">Yosemite Valley</p>
-                  </div>
-                </div>
-                <div className="aspect-square overflow-hidden rounded-lg group relative">
-                  <img 
-                    src="/images/haiku_steps.png" 
-                    alt="Hiking trail"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
-                    <p className="text-white text-sm p-2">Descending the Haiku Steps in Oahu</p>
-                  </div>
-                </div>
+                ))}
               </div>
+            </CardHeader>
+          </Card>
+
+          {/* Hiking Hobby */}
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/60 backdrop-blur-sm">
+            <CardHeader>
+              <div className="flex items-center gap-4 mb-4">
+                <Footprints className="w-8 h-8 text-white" />
+                <CardTitle className="text-2xl text-white">Hiking</CardTitle>
+              </div>
+              <CardDescription className="text-lg text-white mb-6">
+                Hiking is my favorite way to explore the outdoors. I love finding trails that lead to a great view — whether that's a mountain summit, a valley overlook, or a hidden waterfall. In the long term, I hope to visit every US National Park and tackle some of the world's great long-distance trails.
+              </CardDescription>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {[
+                  { src: "/images/mountain_lake.png", alt: "Lake Louise", caption: "Top of hike overlooking Lake Louise in Banff" },
+                  { src: "/images/rock_climbing.png", alt: "Half Dome cables", caption: "Before climbing the cables of Half Dome" },
+                  { src: "/images/yosemite_valley.png", alt: "Yosemite Valley", caption: "Yosemite Valley" },
+                  { src: "/images/haiku_steps.png", alt: "Haiku Steps", caption: "Descending the Haiku Steps in Oahu" },
+                ].map((photo) => (
+                  <div key={photo.src} className="aspect-square overflow-hidden rounded-lg group relative">
+                    <img
+                      src={photo.src}
+                      alt={photo.alt}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
+                      <p className="text-white text-sm p-2">{photo.caption}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardHeader>
+          </Card>
+
+          {/* Gardening Hobby */}
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/60 backdrop-blur-sm">
+            <CardHeader>
+              <div className="flex items-center gap-4 mb-4">
+                <Sprout className="w-8 h-8 text-white" />
+                <CardTitle className="text-2xl text-white">Gardening</CardTitle>
+              </div>
+              <CardDescription className="text-lg text-white">
+                Gardening is a newer hobby I've picked up and have really enjoyed. There's something satisfying about growing things from scratch and watching them develop over time. Photos coming soon!
+              </CardDescription>
             </CardHeader>
           </Card>
         </div>
