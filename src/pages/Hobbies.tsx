@@ -72,13 +72,33 @@ const Hobbies = () => {
                 I grew up playing volleyball and competing at the USAV Boys Junior Nationals. I played on the UPenn Men's Club Volleyball for a bit as well. Now, I compete in tournaments around the Bay Area and play casually with friends as well.
               </CardDescription>
               <CardDescription className="text-lg text-white mt-4">
-                Outside of playing, I also spent time coaching volleyball for 3 years at the Academy of Volleyball. It was awesome mentoring the next generation of athletes and students. I coached a variety of age groups from 13s to 16s and had the honor of coaching a team that was one of the top 24 teams in the country (<a 
-                  href="https://results.advancedeventsystems.com/event/PTAwMDAwMzM4MDQ90/divisions/156876/standings" 
-                  target="_blank" 
+                Outside of playing, I also spent time coaching volleyball for 3 years at the Academy of Volleyball. It was awesome mentoring the next generation of athletes and students. I coached a variety of age groups from 13s to 16s and had the honor of coaching a team that was one of the top 24 teams in the country (<a
+                  href="https://results.advancedeventsystems.com/event/PTAwMDAwMzM4MDQ90/divisions/156876/standings"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#cbf3f0] hover:text-white underline transition-colors"
                 >Academy 16 National</a>).
               </CardDescription>
+
+              {/* Volleyball Photos Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+                {[
+                  { src: "/images/vb_playing_nyc.jpg", alt: "Playing volleyball in NYC", caption: "Playing with friends in NYC" },
+                  { src: "/images/vb_grass_tournament.png", alt: "Grass volleyball tournament", caption: "Competing in a grass volleyball tournament" },
+                  { src: "/images/vb_usav_coaching.jpg", alt: "Coaching at USAV Nationals", caption: "Coaching in the Open Division at USAV Nationals in 2024" },
+                ].map((photo) => (
+                  <div key={photo.src} className="aspect-square overflow-hidden rounded-lg group relative">
+                    <img
+                      src={photo.src}
+                      alt={photo.alt}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
+                      <p className="text-white text-sm p-2">{photo.caption}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </CardHeader>
           </Card>
 
