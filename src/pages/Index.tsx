@@ -2,8 +2,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const Index = () => {
+  usePageTitle("Stephen Li | 欢迎, Welcome!");
   return (
     <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#000000] flex flex-col relative">
       {/* Background Image */}

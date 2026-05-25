@@ -1,9 +1,11 @@
 
 import { Camera } from "lucide-react";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent } from "@/components/ui/card";
 import SiteNav from "@/components/SiteNav";
 
 const Photos = () => {
+  usePageTitle("Stephen Li | Photos");
   const photos = [
     {
       id: 1,

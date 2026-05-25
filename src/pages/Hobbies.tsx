@@ -1,5 +1,6 @@
 
 import { Instagram, Volleyball, Mountain, Snowflake, Footprints, Sprout, UtensilsCrossed } from "lucide-react";
+import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import SiteNav from "@/components/SiteNav";
@@ -27,7 +28,7 @@ const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: st
 );
 
 const Hobbies = () => {
-
+  usePageTitle("Stephen Li | Hobbies");
   return (
     <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#000000]">
       <SiteNav current="hobbies" />
