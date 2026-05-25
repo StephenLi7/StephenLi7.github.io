@@ -4,6 +4,28 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import SiteNav from "@/components/SiteNav";
 
+const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: string }[] }) => (
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    {photos.map((photo, index, arr) => {
+      const isLastOdd = index === arr.length - 1 && arr.length % 2 !== 0;
+      return (
+        <div key={photo.src} className={isLastOdd ? 'col-span-2 md:col-span-1 flex md:block justify-center' : ''}>
+          <div className={`${isLastOdd ? 'w-1/2 md:w-full ' : ''}aspect-square overflow-hidden rounded-lg group relative`}>
+            <img
+              src={photo.src}
+              alt={photo.alt}
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
+              <p className="text-white text-sm p-2">{photo.caption}</p>
+            </div>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+);
+
 const Hobbies = () => {
 
   return (
@@ -80,24 +102,12 @@ const Hobbies = () => {
                 >Academy 16 National</a>).
               </CardDescription>
 
-              {/* Volleyball Photos Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
-                {[
+              <div className="mt-6">
+                <PhotoGrid photos={[
                   { src: "/images/vb_playing_nyc.jpg", alt: "Playing volleyball in NYC", caption: "Playing with friends in NYC" },
                   { src: "/images/vb_grass_tournament.png", alt: "Grass volleyball tournament", caption: "Competing in a grass volleyball tournament" },
                   { src: "/images/vb_usav_coaching.jpg", alt: "Coaching at USAV Nationals", caption: "Coaching in the Open Division at USAV Nationals in 2024" },
-                ].map((photo) => (
-                  <div key={photo.src} className="aspect-square overflow-hidden rounded-lg group relative">
-                    <img
-                      src={photo.src}
-                      alt={photo.alt}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
-                      <p className="text-white text-sm p-2">{photo.caption}</p>
-                    </div>
-                  </div>
-                ))}
+                ]} />
               </div>
             </CardHeader>
           </Card>
@@ -111,38 +121,33 @@ const Hobbies = () => {
               </div>
               <div className="text-lg text-white mb-6">
                 <p>I was born in Colorado and grew up skiing from a young age. I hit the slopes with friends and family every year. Some of my favorite trips include:</p>
-                <ul className="list-disc list-inside mt-2 mb-4 space-y-1">
-                  <li>Jackson Hole</li>
-                  <li>Whistler</li>
-                  <li>Hokkaido</li>
-                  <li>Snowbird</li>
-                  <li>Aspen</li>
-                </ul>
+                <div className="grid grid-cols-2 mt-2 mb-4">
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Jackson Hole</li>
+                    <li>Whistler</li>
+                  </ul>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Hokkaido</li>
+                    <li>Aspen</li>
+                  </ul>
+                </div>
                 <p>On my bucketlist are:</p>
-                <ul className="list-disc list-inside mt-2 space-y-1">
-                  <li>Big Sky</li>
-                  <li>Swiss and French Alps</li>
-                  <li>Telluride</li>
-                  <li>Hakuba</li>
-                </ul>
+                <div className="grid grid-cols-2 mt-2">
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Big Sky</li>
+                    <li>Swiss and French Alps</li>
+                  </ul>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Telluride</li>
+                    <li>Hakuba</li>
+                  </ul>
+                </div>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {[
-                  { src: "/images/mountain_skiing.png", alt: "Night skiing", caption: "Night ski at Brighton Ski Resort" },
-                  { src: "/images/mountain_rocks.png", alt: "Kings and Queens of Corbets", caption: "Kings and Queens of Corbets" },
-                ].map((photo) => (
-                  <div key={photo.src} className="aspect-square overflow-hidden rounded-lg group relative">
-                    <img
-                      src={photo.src}
-                      alt={photo.alt}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
-                      <p className="text-white text-sm p-2">{photo.caption}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <PhotoGrid photos={[
+                { src: "/images/mountain_skiing.png", alt: "Night skiing", caption: "Night ski at Brighton Ski Resort" },
+                { src: "/images/mountain_rocks.png", alt: "Kings and Queens of Corbets", caption: "Kings and Queens of Corbets" },
+                { src: "/images/rusutsu.jpg", alt: "Skiing at Rusutsu", caption: "Skiing powder at Rusutsu Resort in Hokkaido" },
+              ]} />
             </CardHeader>
           </Card>
 
@@ -156,27 +161,14 @@ const Hobbies = () => {
               <CardDescription className="text-lg text-white mb-6">
                 Hiking is my favorite way to explore the outdoors. I love finding trails that lead to a great view — whether that's a mountain summit, a valley overlook, or a hidden waterfall. In the long term, I hope to visit every US National Park and tackle some of the world's great long-distance trails.
               </CardDescription>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {[
-                  { src: "/images/rock_climbing.png", alt: "Half Dome cables", caption: "Before climbing the cables of Half Dome" },
-                  { src: "/images/cascade_mountain.jpg", alt: "Cascade Mountain", caption: "Summit of Cascade Mountain overlooking Banff" },
-                  { src: "/images/jzg_mirror_lake.jpg", alt: "JiuZhaiGou Mirror Lake", caption: "Hiking in JiuZhaiGou National Park in China to see Mirror Lake" },
-                  { src: "/images/mountain_lake.png", alt: "Lake Louise", caption: "Top of hike overlooking Lake Louise in Banff" },
-                  { src: "/images/yosemite_valley.png", alt: "Yosemite Valley", caption: "Yosemite Valley" },
-                  { src: "/images/haiku_steps.png", alt: "Haiku Steps", caption: "Descending the Haiku Steps in Oahu" },
-                ].map((photo) => (
-                  <div key={photo.src} className="aspect-square overflow-hidden rounded-lg group relative">
-                    <img
-                      src={photo.src}
-                      alt={photo.alt}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
-                      <p className="text-white text-sm p-2">{photo.caption}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <PhotoGrid photos={[
+                { src: "/images/rock_climbing.png", alt: "Half Dome cables", caption: "Before climbing the cables of Half Dome" },
+                { src: "/images/cascade_mountain.jpg", alt: "Cascade Mountain", caption: "Summit of Cascade Mountain overlooking Banff" },
+                { src: "/images/jzg_mirror_lake.jpg", alt: "JiuZhaiGou Mirror Lake", caption: "Hiking in JiuZhaiGou National Park in China to see Mirror Lake" },
+                { src: "/images/mountain_lake.png", alt: "Lake Louise", caption: "Top of hike overlooking Lake Louise in Banff" },
+                { src: "/images/yosemite_valley.png", alt: "Yosemite Valley", caption: "Yosemite Valley" },
+                { src: "/images/haiku_steps.png", alt: "Haiku Steps", caption: "Descending the Haiku Steps in Oahu" },
+              ]} />
             </CardHeader>
           </Card>
 
