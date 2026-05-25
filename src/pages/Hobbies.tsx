@@ -1,7 +1,7 @@
 
-import { Instagram, Volleyball, Mountain, Snowflake, Footprints, Sprout, UtensilsCrossed } from "lucide-react";
+import { Volleyball, Snowflake, Footprints, Sprout, UtensilsCrossed } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import SiteNav from "@/components/SiteNav";
 
