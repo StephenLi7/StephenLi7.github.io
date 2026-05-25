@@ -144,12 +144,12 @@ const Hobbies = () => {
               </CardDescription>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {[
-                  { src: "/images/mountain_lake.png", alt: "Lake Louise", caption: "Top of hike overlooking Lake Louise in Banff" },
                   { src: "/images/rock_climbing.png", alt: "Half Dome cables", caption: "Before climbing the cables of Half Dome" },
-                  { src: "/images/yosemite_valley.png", alt: "Yosemite Valley", caption: "Yosemite Valley" },
-                  { src: "/images/haiku_steps.png", alt: "Haiku Steps", caption: "Descending the Haiku Steps in Oahu" },
                   { src: "/images/cascade_mountain.jpg", alt: "Cascade Mountain", caption: "Summit of Cascade Mountain overlooking Banff" },
                   { src: "/images/jzg_mirror_lake.jpg", alt: "JiuZhaiGou Mirror Lake", caption: "Hiking in JiuZhaiGou National Park in China to see Mirror Lake" },
+                  { src: "/images/mountain_lake.png", alt: "Lake Louise", caption: "Top of hike overlooking Lake Louise in Banff" },
+                  { src: "/images/yosemite_valley.png", alt: "Yosemite Valley", caption: "Yosemite Valley" },
+                  { src: "/images/haiku_steps.png", alt: "Haiku Steps", caption: "Descending the Haiku Steps in Oahu" },
                 ].map((photo) => (
                   <div key={photo.src} className="aspect-square overflow-hidden rounded-lg group relative">
                     <img
