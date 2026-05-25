@@ -19,4 +19,4 @@ My personal website, live at [stephenli7.github.io](https://stephenli7.github.io
 
 ## Built with Claude Code
 
-I wanted to build a personal website as an opportunity to work with Claude Code in my personal life outside of work. Claude Code [Claude Code](https://claude.ai/code) handled feature development, mobile responsiveness, and deployment configuration off an initial site I had started on.
+I wanted to build a personal website as an opportunity to work with Claude Code in my personal life outside of work. [Claude Code](https://claude.ai/code) handled feature development, mobile responsiveness, and deployment configuration off an initial site I had started on.
