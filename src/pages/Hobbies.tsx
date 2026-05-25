@@ -109,9 +109,23 @@ const Hobbies = () => {
                 <Snowflake className="w-8 h-8 text-white" />
                 <CardTitle className="text-2xl text-white">Skiing</CardTitle>
               </div>
-              <CardDescription className="text-lg text-white mb-6">
-                I was born in Colorado and grew up skiing the Rockies from a young age. I still try to get on the mountain every season and have skied across North America — from Jackson Hole and Alta to Whistler and Banff. In the long term, I'd love to ski some of the biggest mountains in the world.
-              </CardDescription>
+              <div className="text-lg text-white mb-6">
+                <p>I was born in Colorado and grew up skiing from a young age. I hit the slopes with friends and family every year. Some of my favorite trips include:</p>
+                <ul className="list-disc list-inside mt-2 mb-4 space-y-1">
+                  <li>Jackson Hole</li>
+                  <li>Whistler</li>
+                  <li>Hokkaido</li>
+                  <li>Snowbird</li>
+                  <li>Aspen</li>
+                </ul>
+                <p>On my bucketlist are:</p>
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>Big Sky</li>
+                  <li>Swiss and French Alps</li>
+                  <li>Telluride</li>
+                  <li>Hakuba</li>
+                </ul>
+              </div>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {[
                   { src: "/images/mountain_skiing.png", alt: "Night skiing", caption: "Night ski at Brighton Ski Resort" },
