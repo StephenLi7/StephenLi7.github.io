@@ -35,7 +35,7 @@ const ProjectsSection = () => (
           .
         </p>
         <div className="flex flex-wrap gap-2">
-          {["Audio Production", "Content Creation", "RSS"].map((skill) => (
+          {["Audio Editing and Sound Design", "Project Management", "Topic Research", "Communication and Public Speaking"].map((skill) => (
             <Badge key={skill} variant="outline" className="border-[#66666e] dark:border-[#9999a1] text-white">
               {skill}
             </Badge>
