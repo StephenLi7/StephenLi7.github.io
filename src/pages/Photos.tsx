@@ -3,14 +3,42 @@ import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent } from "@/components/ui/card";
 import SiteNav from "@/components/SiteNav";
 
-const ComingSoon = () => (
-  <div className="col-span-full text-center text-white/70 py-8">
-    <p>Photos coming soon...</p>
+const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: string }[] }) => (
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    {photos.map((photo, index, arr) => {
+      const isLastOdd = index === arr.length - 1 && arr.length % 2 !== 0;
+      return (
+        <div key={photo.src} className={isLastOdd ? "col-span-2 md:col-span-1 flex md:block justify-center" : ""}>
+          <div className={`${isLastOdd ? "w-1/2 md:w-full " : ""}aspect-square overflow-hidden rounded-lg group relative`}>
+            <img
+              src={photo.src}
+              alt={photo.alt}
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
+              <p className="text-white text-sm p-3">{photo.caption}</p>
+            </div>
+          </div>
+        </div>
+      );
+    })}
   </div>
 );
 
 const Photos = () => {
   usePageTitle("Stephen Li | Photos");
+
+  const placesPhotos = [
+    { src: "/images/hk_skyline.jpg",                   alt: "Hong Kong skyline",          caption: "Hong Kong skyline at night" },
+    { src: "/images/jiufen.jpg",                        alt: "Jiufen, Taiwan",             caption: "Jiufen Old Street, Taiwan" },
+    { src: "/images/huanglong_color_ponds.jpg",         alt: "Huanglong, China",           caption: "Huanglong Scenic Area, Sichuan" },
+    { src: "/images/kuanzhai_alley_chengdu.jpg",        alt: "Kuanzhai Alley, Chengdu",    caption: "Kuanzhai Alley, Chengdu" },
+    { src: "/images/coffee_in_seoul.jpg",               alt: "Coffee in Seoul",            caption: "Coffee at Kotton Seoul" },
+    { src: "/images/mauna_kea.jpg",                     alt: "Mauna Kea, Hawaii",          caption: "Sunset above the clouds on Mauna Kea" },
+    { src: "/images/sandiego_coastline.jpg",            alt: "San Diego coastline",        caption: "San Diego coastline on film" },
+    { src: "/images/national_elk_reserve_jackson.jpg",  alt: "National Elk Reserve",       caption: "National Elk Reserve, Jackson Hole" },
+    { src: "/images/emerald_lake_banff.jpg",            alt: "Emerald Lake, Banff",        caption: "Emerald Lake, Yoho National Park" },
+  ];
 
   return (
     <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#000000]">
@@ -42,30 +70,14 @@ const Photos = () => {
 
         <div className="space-y-16">
           <div>
-            <h2 className="text-3xl font-bold text-white mb-8">Mountain Sports</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <ComingSoon />
-            </div>
+            <h2 className="text-3xl font-bold text-white mb-8">Places I've Been</h2>
+            <PhotoGrid photos={placesPhotos} />
           </div>
 
           <div>
-            <h2 className="text-3xl font-bold text-white mb-8">Volleyball</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <ComingSoon />
-            </div>
-          </div>
-
-          <div>
-            <h2 className="text-3xl font-bold text-white mb-8">Culinary Adventures</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <ComingSoon />
-            </div>
-          </div>
-
-          <div>
-            <h2 className="text-3xl font-bold text-white mb-8">Other Photos I Like</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <ComingSoon />
+            <h2 className="text-3xl font-bold text-white mb-8">Things I've Done</h2>
+            <div className="text-center text-white/70 py-8">
+              <p>Photos coming soon...</p>
             </div>
           </div>
         </div>
