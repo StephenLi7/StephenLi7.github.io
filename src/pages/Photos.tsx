@@ -3,7 +3,9 @@ import { usePageTitle } from "@/hooks/usePageTitle";
 import { Card, CardContent } from "@/components/ui/card";
 import SiteNav from "@/components/SiteNav";
 
-const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: string }[] }) => (
+type Photo = { src: string; alt: string; caption: string; objectPosition?: string };
+
+const PhotoGrid = ({ photos }: { photos: Photo[] }) => (
   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
     {photos.map((photo, index, arr) => {
       const isLastOdd = index === arr.length - 1 && arr.length % 2 !== 0;
@@ -14,6 +16,7 @@ const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: st
               src={photo.src}
               alt={photo.alt}
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              style={photo.objectPosition ? { objectPosition: photo.objectPosition } : undefined}
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
               <p className="text-white text-sm p-3">{photo.caption}</p>
@@ -77,9 +80,9 @@ const Photos = () => {
           <div>
             <h2 className="text-3xl font-bold text-white mb-8">Things I've Done</h2>
             <PhotoGrid photos={[
-              { src: "/images/spartan_race.jpg",                    alt: "Spartan Race",          caption: "Competing in a Spartan Race" },
+              { src: "/images/spartan_race.jpg",                    alt: "Spartan Race",          caption: "Competing in a Spartan Race",          objectPosition: "top" },
               { src: "/images/archery.jpg",                         alt: "Archery",               caption: "Trying out archery" },
-              { src: "/images/frisbee_enjoyer.jpg",                 alt: "Playing frisbee",       caption: "Playing frisbee on film" },
+              { src: "/images/frisbee_enjoyer.jpg",                 alt: "Playing frisbee",       caption: "Playing frisbee on film",              objectPosition: "bottom" },
               { src: "/images/paintball.jpg",                       alt: "Paintball",             caption: "Paintball on film" },
               { src: "/images/snowmobiling_hokkaido.jpg",           alt: "Snowmobiling",          caption: "Snowmobiling in Hokkaido" },
               { src: "/images/biking_chengdu_tianfu_greenway.jpg",  alt: "Biking in Chengdu",     caption: "Biking along the Tianfu Greenway in Chengdu" },
