@@ -76,9 +76,14 @@ const Photos = () => {
 
           <div>
             <h2 className="text-3xl font-bold text-white mb-8">Things I've Done</h2>
-            <div className="text-center text-white/70 py-8">
-              <p>Photos coming soon...</p>
-            </div>
+            <PhotoGrid photos={[
+              { src: "/images/spartan_race.jpg",                    alt: "Spartan Race",          caption: "Competing in a Spartan Race" },
+              { src: "/images/archery.jpg",                         alt: "Archery",               caption: "Trying out archery" },
+              { src: "/images/frisbee_enjoyer.jpg",                 alt: "Playing frisbee",       caption: "Playing frisbee on film" },
+              { src: "/images/paintball.jpg",                       alt: "Paintball",             caption: "Paintball on film" },
+              { src: "/images/snowmobiling_hokkaido.jpg",           alt: "Snowmobiling",          caption: "Snowmobiling in Hokkaido" },
+              { src: "/images/biking_chengdu_tianfu_greenway.jpg",  alt: "Biking in Chengdu",     caption: "Biking along the Tianfu Greenway in Chengdu" },
+            ]} />
           </div>
         </div>
       </div>
