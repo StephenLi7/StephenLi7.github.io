@@ -36,7 +36,7 @@ const EducationSection = () => {
                 </CardDescription>
               </div>
             </div>
-            <Badge variant="secondary" className="bg-[#9999a1]/20 dark:bg-[#66666e]/50 text-white self-start sm:self-auto whitespace-nowrap">
+            <Badge variant="secondary" className="bg-[#9999a1]/20 dark:bg-[#66666e]/50 text-white self-start sm:self-auto whitespace-nowrap py-1.5">
               August 2016 - May 2020
             </Badge>
           </div>
@@ -48,7 +48,7 @@ const EducationSection = () => {
               <h4 className="text-lg font-semibold text-white mb-3">Key Courses</h4>
               <div className="flex flex-wrap gap-2">
                 {keyCourses.map((course, index) => (
-                  <Badge key={index} variant="outline" className="border-[#66666e] dark:border-[#9999a1] text-white">
+                  <Badge key={index} variant="outline" className="border-[#66666e] dark:border-[#9999a1] text-white py-1.5">
                     {course}
                   </Badge>
                 ))}
@@ -60,7 +60,7 @@ const EducationSection = () => {
               <h4 className="text-lg font-semibold text-white mb-3">Organizations</h4>
               <div className="flex flex-wrap gap-2">
                 {organizations.map((org, index) => (
-                  <Badge key={index} variant="outline" className="border-[#66666e] dark:border-[#9999a1] text-white">
+                  <Badge key={index} variant="outline" className="border-[#66666e] dark:border-[#9999a1] text-white py-1.5">
                     {org}
                   </Badge>
                 ))}

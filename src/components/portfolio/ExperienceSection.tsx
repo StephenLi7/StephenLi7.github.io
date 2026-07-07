@@ -98,7 +98,7 @@ const ExperienceSection = () => {
                     <CardDescription className="text-lg font-medium text-white">{exp.company}</CardDescription>
                   </div>
                 </div>
-                <Badge variant="secondary" className="bg-[#9999a1]/20 dark:bg-[#66666e]/50 text-white self-start sm:self-auto whitespace-nowrap">
+                <Badge variant="secondary" className="bg-[#9999a1]/20 dark:bg-[#66666e]/50 text-white self-start sm:self-auto whitespace-nowrap py-1.5">
                   {exp.period}
                 </Badge>
               </div>
@@ -109,7 +109,7 @@ const ExperienceSection = () => {
               </div>
               <div className="flex flex-wrap gap-2">
                 {exp.skills.map((skill, skillIndex) => (
-                  <Badge key={skillIndex} variant="outline" className="border-[#66666e] dark:border-[#9999a1] text-white">
+                  <Badge key={skillIndex} variant="outline" className="border-[#66666e] dark:border-[#9999a1] text-white py-1.5">
                     {skill}
                   </Badge>
                 ))}

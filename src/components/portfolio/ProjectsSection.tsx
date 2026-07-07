@@ -16,7 +16,7 @@ const ProjectsSection = () => (
             />
             <CardTitle className="text-xl text-white">Takeout Podcast</CardTitle>
           </div>
-          <Badge variant="secondary" className="bg-[#9999a1]/20 dark:bg-[#66666e]/50 text-white self-start sm:self-auto whitespace-nowrap">
+          <Badge variant="secondary" className="bg-[#9999a1]/20 dark:bg-[#66666e]/50 text-white self-start sm:self-auto whitespace-nowrap py-1.5">
             Coming back soon
           </Badge>
         </div>
@@ -36,7 +36,7 @@ const ProjectsSection = () => (
         </p>
         <div className="flex flex-wrap gap-2">
           {["Audio Editing and Sound Design", "Project Management", "Topic Research", "Communication and Public Speaking"].map((skill) => (
-            <Badge key={skill} variant="outline" className="border-[#66666e] dark:border-[#9999a1] text-white">
+            <Badge key={skill} variant="outline" className="border-[#66666e] dark:border-[#9999a1] text-white py-1.5">
               {skill}
             </Badge>
           ))}

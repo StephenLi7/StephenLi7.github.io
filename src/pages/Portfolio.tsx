@@ -12,7 +12,7 @@ const Portfolio = () => {
     <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#000000]">
       <SiteNav current="portfolio" />
 
-      <div className="max-w-6xl mx-auto px-6 pb-20">
+      <div className="max-w-[800px] mx-auto px-6 pb-20">
         <PortfolioHero />
         <ExperienceSection />
         <EducationSection />
