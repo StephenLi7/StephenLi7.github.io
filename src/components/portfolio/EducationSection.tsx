@@ -20,7 +20,7 @@ const EducationSection = () => {
   return (
     <section className="mb-16">
       <h2 className="text-3xl font-bold text-white mb-8 text-center">Education</h2>
-      <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/60 backdrop-blur-sm">
+      <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/40 backdrop-blur-sm">
         <CardHeader>
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
             <div className="flex items-center gap-3">
