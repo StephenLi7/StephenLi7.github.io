@@ -30,7 +30,7 @@ const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: st
 const Hobbies = () => {
   usePageTitle("Stephen Li | Hobbies");
   return (
-    <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#000000]">
+    <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#121212]">
       <SiteNav current="hobbies" />
 
       <div className="max-w-6xl mx-auto px-6 pb-20">

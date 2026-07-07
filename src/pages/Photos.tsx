@@ -44,7 +44,7 @@ const Photos = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#000000]">
+    <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#121212]">
       <SiteNav current="photos" />
 
       <div className="max-w-6xl mx-auto px-6 pb-20">
