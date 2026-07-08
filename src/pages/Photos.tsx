@@ -19,7 +19,7 @@ const PhotoGrid = ({ photos }: { photos: Photo[] }) => (
               style={photo.objectPosition ? { objectPosition: photo.objectPosition } : undefined}
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
-              <p className="text-white text-sm p-3">{photo.caption}</p>
+              <p className="text-white/90 text-sm p-3">{photo.caption}</p>
             </div>
           </div>
         </div>
@@ -50,8 +50,8 @@ const Photos = () => {
       <div className="max-w-6xl mx-auto px-6 pb-20">
         <div className="text-center mb-16 animate-fade-in">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Camera className="w-8 h-8 text-white" />
-            <h1 className="text-4xl md:text-6xl font-bold text-white">
+            <Camera className="w-8 h-8 text-white/90" />
+            <h1 className="text-4xl md:text-6xl font-bold text-white/90">
               My Photos
             </h1>
           </div>
@@ -60,11 +60,11 @@ const Photos = () => {
         <div className="mb-16">
           <Card className="border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold text-white mb-4">About This Collection</h2>
-              <p className="text-white text-lg leading-relaxed mb-4">
+              <h2 className="text-2xl font-bold text-white/90 mb-4">About This Collection</h2>
+              <p className="text-white/90 text-lg leading-relaxed mb-4">
                 All of these photos were either shot on an iPhone or a disposable film camera. I am by no means a professional photographer. But, I do enjoy taking photos that represent a curated collection of moments, emotions, and stories.
               </p>
-              <p className="text-white text-lg leading-relaxed">
+              <p className="text-white/90 text-lg leading-relaxed">
                 Photos are a great way for me to capture moments in my life. I hope you enjoy!
               </p>
             </CardContent>
@@ -73,12 +73,12 @@ const Photos = () => {
 
         <div className="space-y-16">
           <div>
-            <h2 className="text-3xl font-bold text-white mb-8">Places I've Been</h2>
+            <h2 className="text-3xl font-bold text-white/90 mb-8">Places I've Been</h2>
             <PhotoGrid photos={placesPhotos} />
           </div>
 
           <div>
-            <h2 className="text-3xl font-bold text-white mb-8">Things I've Done</h2>
+            <h2 className="text-3xl font-bold text-white/90 mb-8">Things I've Done</h2>
             <PhotoGrid photos={[
               { src: "/images/spartan_race.jpg",                    alt: "Spartan Race",          caption: "Competing in a Spartan Race",          objectPosition: "top" },
               { src: "/images/archery.jpg",                         alt: "Archery",               caption: "Trying out archery" },

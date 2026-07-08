@@ -38,16 +38,16 @@ const PortfolioHero = () => {
         </div>
       </div>
       
-      <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+      <h1 className="text-4xl md:text-6xl font-bold text-white/90 mb-4">
         Stephen Li
       </h1>
-      <p className="text-xl text-white mb-8">Data and Product Enthusiast</p>
+      <p className="text-xl text-white/90 mb-8">Data and Product Enthusiast</p>
       
       <div className="flex flex-wrap justify-center gap-3 mb-8">
         <Button 
           variant="outline" 
           size="sm" 
-          className="hover:bg-[#9999a1]/10 dark:hover:bg-[#66666e]/20 border-[#66666e] dark:border-[#9999a1] text-white hover:text-[#cbf3f0]"
+          className="hover:bg-[#9999a1]/10 dark:hover:bg-[#66666e]/20 border-[#66666e] dark:border-[#9999a1] text-white/90 hover:text-[#cbf3f0]"
           onClick={handleContactClick}
         >
           <Mail className="w-4 h-4 mr-2" />
@@ -56,14 +56,14 @@ const PortfolioHero = () => {
         <Button 
           variant="outline" 
           size="sm" 
-          className="hover:bg-[#9999a1]/10 dark:hover:bg-[#66666e]/20 border-[#66666e] dark:border-[#9999a1] text-white hover:text-[#cbf3f0]"
+          className="hover:bg-[#9999a1]/10 dark:hover:bg-[#66666e]/20 border-[#66666e] dark:border-[#9999a1] text-white/90 hover:text-[#cbf3f0]"
           onClick={handleLinkedInClick}
         >
           <Linkedin className="w-4 h-4 mr-2" />
           LinkedIn
         </Button>
         <a href="/Resume_Stephen_Li.pdf" target="_blank" rel="noopener noreferrer">
-          <Button variant="outline" size="sm" className="hover:bg-[#9999a1]/10 dark:hover:bg-[#66666e]/20 border-[#66666e] dark:border-[#9999a1] text-white hover:text-[#cbf3f0]">
+          <Button variant="outline" size="sm" className="hover:bg-[#9999a1]/10 dark:hover:bg-[#66666e]/20 border-[#66666e] dark:border-[#9999a1] text-white/90 hover:text-[#cbf3f0]">
             <Download className="w-4 h-4 mr-2" />
             My Resume
           </Button>
@@ -71,7 +71,7 @@ const PortfolioHero = () => {
         <Button 
           variant="outline" 
           size="sm" 
-          className="hover:bg-[#9999a1]/10 dark:hover:bg-[#66666e]/20 border-[#66666e] dark:border-[#9999a1] text-white hover:text-[#cbf3f0]"
+          className="hover:bg-[#9999a1]/10 dark:hover:bg-[#66666e]/20 border-[#66666e] dark:border-[#9999a1] text-white/90 hover:text-[#cbf3f0]"
           onClick={handleGitHubClick}
         >
           <Github className="w-4 h-4 mr-2" />

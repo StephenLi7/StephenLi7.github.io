@@ -33,11 +33,11 @@ const Index = () => {
 
           {/* Main heading */}
           <div className="space-y-4 md:space-y-6">
-            <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight">
+            <h1 className="text-4xl md:text-7xl font-bold text-white/90 leading-tight">
               Hi! I'm Stephen
             </h1>
 
-            <p className="text-lg md:text-2xl text-white max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               Welcome to my personal website: a place where I share my work and things I enjoy
             </p>
           </div>
@@ -47,7 +47,7 @@ const Index = () => {
             <Link to="/portfolio">
               <Button
                 size="lg"
-                className="bg-[#121212] hover:bg-[#66666e] dark:bg-[#f4f4f6] dark:hover:bg-[#e6e6e9] text-white dark:text-[#121212] px-8 py-4 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group"
+                className="bg-[#121212] hover:bg-[#66666e] dark:bg-[#f4f4f6] dark:hover:bg-[#e6e6e9] text-white/90 dark:text-[#121212] px-8 py-4 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group"
               >
                 Explore
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

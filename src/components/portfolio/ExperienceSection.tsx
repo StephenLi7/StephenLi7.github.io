@@ -10,7 +10,7 @@ const ExperienceSection = () => {
       period: "July 2025 - Present",
       description: (
         <div>
-          <p className="font-semibold text-white mb-2">Facebook Notifications</p>
+          <p className="font-semibold text-white/90 mb-2">Facebook Notifications</p>
           <ul className="list-disc list-inside space-y-2">
             <li>Lead a cross-org initiative to unify push and email notification systems; designed multi-region capacity test identifying impact of 200K+ DAU, and drive ML optimization and roadmap decisions</li>
             <li>Own analytics and reporting for Facebook Widgets, driving performance insights for Events widget launch and experimentation pipeline</li>
@@ -79,7 +79,7 @@ const ExperienceSection = () => {
 
   return (
     <section className="mb-16">
-      <h2 className="text-3xl font-bold text-white mb-8 text-center">Professional Experience</h2>
+      <h2 className="text-3xl font-bold text-white/90 mb-8 text-center">Professional Experience</h2>
       <div className="space-y-6">
         {experiences.map((exp, index) => (
           <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
@@ -94,22 +94,22 @@ const ExperienceSection = () => {
                     />
                   )}
                   <div>
-                    <CardTitle className="text-xl text-white">{exp.title}</CardTitle>
-                    <CardDescription className="text-lg font-medium text-white">{exp.company}</CardDescription>
+                    <CardTitle className="text-xl text-white/90">{exp.title}</CardTitle>
+                    <CardDescription className="text-lg font-medium text-white/90">{exp.company}</CardDescription>
                   </div>
                 </div>
-                <Badge variant="secondary" className="bg-[#9999a1]/20 dark:bg-[#66666e]/50 text-white self-start sm:self-auto whitespace-nowrap py-1.5">
+                <Badge variant="secondary" className="bg-[#9999a1]/20 dark:bg-[#66666e]/50 text-white/90 self-start sm:self-auto whitespace-nowrap py-1.5">
                   {exp.period}
                 </Badge>
               </div>
             </CardHeader>
             <CardContent>
-              <div className="text-white mb-4">
+              <div className="text-white/90 mb-4">
                 {typeof exp.description === 'string' ? exp.description : exp.description}
               </div>
               <div className="flex flex-wrap gap-2">
                 {exp.skills.map((skill, skillIndex) => (
-                  <Badge key={skillIndex} variant="outline" className="border-[#66666e] dark:border-[#9999a1] text-white py-1.5">
+                  <Badge key={skillIndex} variant="outline" className="border-[#66666e] dark:border-[#9999a1] text-white/90 py-1.5">
                     {skill}
                   </Badge>
                 ))}
