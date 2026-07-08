@@ -58,7 +58,7 @@ const Photos = () => {
         </div>
 
         <div className="mb-16">
-          <Card className="border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/40 backdrop-blur-sm">
+          <Card className="border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardContent className="p-8">
               <h2 className="text-2xl font-bold text-white mb-4">About This Collection</h2>
               <p className="text-white text-lg leading-relaxed mb-4">

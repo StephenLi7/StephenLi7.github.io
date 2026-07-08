@@ -50,7 +50,7 @@ const Hobbies = () => {
         {/* Hobbies Section */}
         <div className="space-y-8">
           {/* Food Hobby */}
-          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/40 backdrop-blur-sm">
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
                 <UtensilsCrossed className="w-8 h-8 text-white" />
@@ -85,7 +85,7 @@ const Hobbies = () => {
           </Card>
 
           {/* Volleyball Hobby */}
-          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/40 backdrop-blur-sm">
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
                 <Volleyball className="w-8 h-8 text-white" />
@@ -114,7 +114,7 @@ const Hobbies = () => {
           </Card>
 
           {/* Skiing Hobby */}
-          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/40 backdrop-blur-sm">
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
                 <Snowflake className="w-8 h-8 text-white" />
@@ -153,7 +153,7 @@ const Hobbies = () => {
           </Card>
 
           {/* Hiking Hobby */}
-          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/40 backdrop-blur-sm">
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
                 <Footprints className="w-8 h-8 text-white" />
@@ -174,7 +174,7 @@ const Hobbies = () => {
           </Card>
 
           {/* Gardening Hobby */}
-          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#66666e]/40 backdrop-blur-sm">
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
                 <Sprout className="w-8 h-8 text-white" />
