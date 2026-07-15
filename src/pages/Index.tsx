@@ -47,7 +47,7 @@ const Index = () => {
             <Link to="/portfolio">
               <Button
                 size="lg"
-                className="bg-[#f4f4f6] hover:bg-[#e6e6e9] text-[#121212] px-8 py-4 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group"
+                className="bg-white hover:bg-[#e6e6e9] text-[#121212] px-8 py-4 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group"
               >
                 Explore
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
