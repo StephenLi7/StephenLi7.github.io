@@ -66,7 +66,7 @@ const Hobbies = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button variant="outline" size="sm" className="bg-foreground/10 text-foreground/90 border-foreground/20 hover:bg-foreground/20">
+                  <Button variant="outline" size="sm" className="bg-foreground/10 text-foreground/90 border-foreground/20 hover:bg-foreground/20 hover:text-foreground">
                     <img src="/logos/instagram_logo.png" alt="Instagram" className="w-4 h-4 mr-2" />
                     My Food Instagram
                   </Button>
@@ -76,7 +76,7 @@ const Hobbies = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button variant="outline" size="sm" className="bg-foreground/10 text-foreground/90 border-foreground/20 hover:bg-foreground/20">
+                  <Button variant="outline" size="sm" className="bg-foreground/10 text-foreground/90 border-foreground/20 hover:bg-foreground/20 hover:text-foreground">
                     <img src="/logos/yelp_logo.png" alt="Yelp" className="w-4 h-4 mr-2" />
                     My Yelp Elite Profile
                   </Button>
