@@ -11,7 +11,7 @@ const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: st
       const isLastOdd = index === arr.length - 1 && arr.length % 2 !== 0;
       return (
         <div key={photo.src} className={isLastOdd ? 'col-span-2 flex justify-center' : ''}>
-          <div className={`${isLastOdd ? 'w-1/2 ' : ''}aspect-square overflow-hidden rounded-lg group relative`}>
+          <div className={`${isLastOdd ? 'w-1/2 ' : ''}aspect-[4/3] overflow-hidden rounded-lg group relative`}>
             <img
               src={photo.src}
               alt={photo.alt}
