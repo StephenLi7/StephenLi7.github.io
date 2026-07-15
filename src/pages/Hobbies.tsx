@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 import SiteNav from "@/components/SiteNav";
 
 const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: string }[] }) => (
-  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+  <div className="grid grid-cols-2 gap-4">
     {photos.map((photo, index, arr) => {
       const isLastOdd = index === arr.length - 1 && arr.length % 2 !== 0;
       return (
-        <div key={photo.src} className={isLastOdd ? 'col-span-2 md:col-span-1 flex md:block justify-center' : ''}>
-          <div className={`${isLastOdd ? 'w-1/2 md:w-full ' : ''}aspect-square overflow-hidden rounded-lg group relative`}>
+        <div key={photo.src} className={isLastOdd ? 'col-span-2 flex justify-center' : ''}>
+          <div className={`${isLastOdd ? 'w-1/2 ' : ''}aspect-square overflow-hidden rounded-lg group relative`}>
             <img
               src={photo.src}
               alt={photo.alt}
@@ -33,7 +33,7 @@ const Hobbies = () => {
     <div className="min-h-screen bg-[#121212]">
       <SiteNav current="hobbies" />
 
-      <div className="max-w-6xl mx-auto px-6 pb-20">
+      <div className="max-w-[800px] mx-auto px-6 pb-20">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground/90 mb-4">
