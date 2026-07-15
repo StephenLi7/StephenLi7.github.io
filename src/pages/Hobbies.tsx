@@ -107,7 +107,7 @@ const Hobbies = () => {
               <div className="mt-6">
                 <PhotoGrid photos={[
                   { src: "/images/vb_playing_nyc.jpg", alt: "Playing volleyball in NYC", caption: "Playing with friends in NYC" },
-                  { src: "/images/vb_grass_tournament.png", alt: "Grass volleyball tournament", caption: "Competing in a grass volleyball tournament", objectPosition: "center 20%" },
+                  { src: "/images/vb_grass_tournament.png", alt: "Grass volleyball tournament", caption: "Competing in a grass volleyball tournament", objectPosition: "center 32%" },
                   { src: "/images/vb_usav_coaching.jpg", alt: "Coaching at USAV Nationals", caption: "Coaching in the Open Division at USAV Nationals in 2024" },
                 ]} />
               </div>
