@@ -5,7 +5,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/ca
 import { Button } from "@/components/ui/button";
 import SiteNav from "@/components/SiteNav";
 
-const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: string }[] }) => (
+const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: string; objectPosition?: string }[] }) => (
   <div className="grid grid-cols-2 gap-4">
     {photos.map((photo, index, arr) => {
       const isLastOdd = index === arr.length - 1 && arr.length % 2 !== 0;
@@ -16,6 +16,7 @@ const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: st
               src={photo.src}
               alt={photo.alt}
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              style={photo.objectPosition ? { objectPosition: photo.objectPosition } : undefined}
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end opacity-0 group-hover:opacity-100">
               <p className="text-white/90 text-sm p-2">{photo.caption}</p>
@@ -106,7 +107,7 @@ const Hobbies = () => {
               <div className="mt-6">
                 <PhotoGrid photos={[
                   { src: "/images/vb_playing_nyc.jpg", alt: "Playing volleyball in NYC", caption: "Playing with friends in NYC" },
-                  { src: "/images/vb_grass_tournament.png", alt: "Grass volleyball tournament", caption: "Competing in a grass volleyball tournament" },
+                  { src: "/images/vb_grass_tournament.png", alt: "Grass volleyball tournament", caption: "Competing in a grass volleyball tournament", objectPosition: "center 20%" },
                   { src: "/images/vb_usav_coaching.jpg", alt: "Coaching at USAV Nationals", caption: "Coaching in the Open Division at USAV Nationals in 2024" },
                 ]} />
               </div>
