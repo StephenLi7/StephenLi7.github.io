@@ -7,7 +7,7 @@ import { usePageTitle } from "@/hooks/usePageTitle";
 const Index = () => {
   usePageTitle("Stephen Li | 欢迎, Welcome!");
   return (
-    <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#121212] flex flex-col relative">
+    <div className="min-h-screen bg-[#121212] flex flex-col relative">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -47,7 +47,7 @@ const Index = () => {
             <Link to="/portfolio">
               <Button
                 size="lg"
-                className="bg-[#121212] hover:bg-[#66666e] dark:bg-[#f4f4f6] dark:hover:bg-[#e6e6e9] text-white/90 dark:text-[#121212] px-8 py-4 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group"
+                className="bg-[#f4f4f6] hover:bg-[#e6e6e9] text-[#121212] px-8 py-4 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group"
               >
                 Explore
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

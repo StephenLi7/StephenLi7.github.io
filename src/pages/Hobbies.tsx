@@ -30,19 +30,19 @@ const PhotoGrid = ({ photos }: { photos: { src: string; alt: string; caption: st
 const Hobbies = () => {
   usePageTitle("Stephen Li | Hobbies");
   return (
-    <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#121212]">
+    <div className="min-h-screen bg-[#121212]">
       <SiteNav current="hobbies" />
 
       <div className="max-w-6xl mx-auto px-6 pb-20">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold text-white/90 mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground/90 mb-4">
             My Hobbies
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground/90 max-w-3xl mx-auto">
             Outside of work and the daily hustle and bustle, I enjoy a variety of hobbies. I have always played sports and love being outdoors, but have discovered more creative and hands on ones in recent years.
           </p>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto mt-4">
+          <p className="text-xl text-foreground/90 max-w-3xl mx-auto mt-4">
             I appreciate that different hobbies provide an opportunity to learn something new, and the challenge that comes with it. If you share similar interests, I'd love to exchange recommendations!
           </p>
         </div>
@@ -50,13 +50,13 @@ const Hobbies = () => {
         {/* Hobbies Section */}
         <div className="space-y-8">
           {/* Food Hobby */}
-          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
-                <UtensilsCrossed className="w-8 h-8 text-white/90" />
-                <CardTitle className="text-2xl text-white/90">Food</CardTitle>
+                <UtensilsCrossed className="w-8 h-8 text-foreground/90" />
+                <CardTitle className="text-2xl text-foreground/90">Food</CardTitle>
               </div>
-              <CardDescription className="text-lg text-white/90 mb-4">
+              <CardDescription className="text-lg text-foreground/90 mb-4">
                 I originally learned how to cook traditional Chinese dishes from my mom. From there, I developed a love for trying new restaurants, cooking new recipes, and exploring different cultures through food. I created a food instagram to share some of my favorite restaurants and foods, and also publish reviews on my Yelp. Feel free to check them out for recommendations!
               </CardDescription>
               <div className="flex gap-3 flex-wrap">
@@ -65,7 +65,7 @@ const Hobbies = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button variant="outline" size="sm" className="bg-white/10 text-white/90 border-white/20 hover:bg-white/20">
+                  <Button variant="outline" size="sm" className="bg-foreground/10 text-foreground/90 border-foreground/20 hover:bg-foreground/20">
                     <img src="/logos/instagram_logo.png" alt="Instagram" className="w-4 h-4 mr-2" />
                     My Food Instagram
                   </Button>
@@ -75,7 +75,7 @@ const Hobbies = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button variant="outline" size="sm" className="bg-white/10 text-white/90 border-white/20 hover:bg-white/20">
+                  <Button variant="outline" size="sm" className="bg-foreground/10 text-foreground/90 border-foreground/20 hover:bg-foreground/20">
                     <img src="/logos/yelp_logo.png" alt="Yelp" className="w-4 h-4 mr-2" />
                     My Yelp Elite Profile
                   </Button>
@@ -85,21 +85,21 @@ const Hobbies = () => {
           </Card>
 
           {/* Volleyball Hobby */}
-          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
-                <Volleyball className="w-8 h-8 text-white/90" />
-                <CardTitle className="text-2xl text-white/90">Volleyball</CardTitle>
+                <Volleyball className="w-8 h-8 text-foreground/90" />
+                <CardTitle className="text-2xl text-foreground/90">Volleyball</CardTitle>
               </div>
-              <CardDescription className="text-lg text-white/90">
+              <CardDescription className="text-lg text-foreground/90">
                 I grew up playing volleyball and competing at the USAV Boys Junior Nationals. I played on the UPenn Men's Club Volleyball for a bit as well. Now, I compete in tournaments around the Bay Area and play casually with friends as well.
               </CardDescription>
-              <CardDescription className="text-lg text-white/90 mt-4">
+              <CardDescription className="text-lg text-foreground/90 mt-4">
                 Outside of playing, I also coached volleyball part time for 3 years at the Academy of Volleyball. It was awesome mentoring the next generation of athletes and students. I coached a variety of age groups from 13s to 16s and had the honor of coaching a team that was one of the top 24 teams in the country (<a
                   href="https://results.advancedeventsystems.com/event/PTAwMDAwMzM4MDQ90/divisions/156876/standings"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#cbf3f0] hover:text-white/90 underline transition-colors"
+                  className="text-[#cbf3f0] hover:text-foreground/90 underline transition-colors"
                 >Academy 16 National</a>).
               </CardDescription>
 
@@ -114,13 +114,13 @@ const Hobbies = () => {
           </Card>
 
           {/* Skiing Hobby */}
-          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
-                <Snowflake className="w-8 h-8 text-white/90" />
-                <CardTitle className="text-2xl text-white/90">Skiing</CardTitle>
+                <Snowflake className="w-8 h-8 text-foreground/90" />
+                <CardTitle className="text-2xl text-foreground/90">Skiing</CardTitle>
               </div>
-              <div className="text-lg text-white/90 mb-6">
+              <div className="text-lg text-foreground/90 mb-6">
                 <p>I was born in Colorado and grew up skiing from a young age. I hit the slopes with friends and family every year. Some of my favorite trips include:</p>
                 <div className="grid grid-cols-2 mt-2 mb-4">
                   <ul className="list-disc list-inside space-y-1">
@@ -153,13 +153,13 @@ const Hobbies = () => {
           </Card>
 
           {/* Hiking Hobby */}
-          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
-                <Footprints className="w-8 h-8 text-white/90" />
-                <CardTitle className="text-2xl text-white/90">Hiking</CardTitle>
+                <Footprints className="w-8 h-8 text-foreground/90" />
+                <CardTitle className="text-2xl text-foreground/90">Hiking</CardTitle>
               </div>
-              <CardDescription className="text-lg text-white/90 mb-6">
+              <CardDescription className="text-lg text-foreground/90 mb-6">
                 Hiking is my favorite way to explore the outdoors. I love finding trails that lead to a great view — whether that's a mountain summit, a valley overlook, or a hidden waterfall. In the long term, I hope to visit every US National Park and tackle some of the world's great long-distance trails.
               </CardDescription>
               <PhotoGrid photos={[
@@ -174,13 +174,13 @@ const Hobbies = () => {
           </Card>
 
           {/* Gardening Hobby */}
-          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#e6e6e9]/60 dark:bg-[#2d2d2d]/80 backdrop-blur-sm">
+          <Card className="hover:shadow-lg transition-shadow duration-300 border-0 bg-[#2d2d2d]/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4 mb-4">
-                <Sprout className="w-8 h-8 text-white/90" />
-                <CardTitle className="text-2xl text-white/90">Gardening</CardTitle>
+                <Sprout className="w-8 h-8 text-foreground/90" />
+                <CardTitle className="text-2xl text-foreground/90">Gardening</CardTitle>
               </div>
-              <CardDescription className="text-lg text-white/90">
+              <CardDescription className="text-lg text-foreground/90">
                 Gardening is a newer hobby I've picked up and have really enjoyed. There's something satisfying about growing things from scratch and watching them develop over time. Photos coming soon!
               </CardDescription>
             </CardHeader>

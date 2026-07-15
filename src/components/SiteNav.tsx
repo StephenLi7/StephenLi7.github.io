@@ -22,7 +22,7 @@ const SiteNav = ({ current }: SiteNavProps) => (
         <Button
           variant="ghost"
           size="sm"
-          className="hover:bg-[#e6e6e9]/50 dark:hover:bg-[#66666e]/50 transition-colors text-white/90 hover:text-[#cbf3f0]"
+          className="hover:bg-[#66666e]/50 transition-colors text-foreground/90 hover:text-[#cbf3f0]"
         >
           <ArrowLeft className="w-4 h-4 mr-1 md:mr-2" />
           <span className="hidden sm:inline">Portfolio</span>
@@ -40,7 +40,7 @@ const SiteNav = ({ current }: SiteNavProps) => (
             variant="outline"
             size="sm"
             disabled
-            className="border-white/60 text-white/90 opacity-100 cursor-default"
+            className="border-foreground/60 text-foreground/90 opacity-100 cursor-default"
           >
             {label}
           </Button>
@@ -49,7 +49,7 @@ const SiteNav = ({ current }: SiteNavProps) => (
             <Button
               variant="outline"
               size="sm"
-              className="border-[#66666e] dark:border-[#9999a1] text-white/90 hover:bg-[#66666e]/20 hover:text-[#cbf3f0]"
+              className="border-[#9999a1] text-foreground/90 hover:bg-[#66666e]/20 hover:text-[#cbf3f0]"
             >
               {label}
             </Button>

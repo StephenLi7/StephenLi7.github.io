@@ -9,7 +9,7 @@ import ProjectsSection from "@/components/portfolio/ProjectsSection";
 const Portfolio = () => {
   usePageTitle("Stephen Li | Portfolio");
   return (
-    <div className="min-h-screen bg-[#f4f4f6] dark:bg-[#121212]">
+    <div className="min-h-screen bg-[#121212]">
       <SiteNav current="portfolio" />
 
       <div className="max-w-[800px] mx-auto px-6 pb-20">
