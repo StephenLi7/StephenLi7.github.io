@@ -36,14 +36,14 @@ const Hobbies = () => {
 
       <div className="max-w-[800px] mx-auto px-6 pb-20">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground/90 mb-4">
+        <div className="mb-16 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground/90 mb-4 text-center">
             My Hobbies
           </h1>
-          <p className="text-xl text-foreground/90 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground/90">
             Outside of work and the daily hustle and bustle, I enjoy a variety of hobbies. I have always played sports and love being outdoors, but have discovered more creative and hands on ones in recent years.
           </p>
-          <p className="text-xl text-foreground/90 max-w-3xl mx-auto mt-4">
+          <p className="text-xl text-foreground/90 mt-4">
             I appreciate that different hobbies provide an opportunity to learn something new, and the challenge that comes with it. If you share similar interests, I'd love to exchange recommendations!
           </p>
         </div>
