@@ -37,7 +37,7 @@ const Hobbies = () => {
       <div className="max-w-[800px] mx-auto px-6 pb-20">
         {/* Header */}
         <div className="mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground/90 mb-4 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground/90 mb-16 text-center">
             My Hobbies
           </h1>
           <p className="text-xl text-foreground/90">

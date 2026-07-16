@@ -1,4 +1,3 @@
-import { Camera } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
 import SiteNav from "@/components/SiteNav";
 
@@ -48,16 +47,12 @@ const Photos = () => {
 
       <div className="max-w-6xl mx-auto px-6 pb-20">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Camera className="w-8 h-8 text-foreground/90" />
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground/90">
-              My Photos
-            </h1>
-          </div>
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground/90">
+            My Photos
+          </h1>
         </div>
 
-        <div className="mb-16">
-          <h2 className="text-2xl font-bold text-foreground/90 mb-4">About This Collection</h2>
+        <div className="max-w-[800px] mx-auto mb-16">
           <p className="text-foreground/90 text-xl leading-relaxed mb-4">
             All of these photos were either shot on an iPhone or a disposable film camera. I am by no means a professional photographer. But, I do enjoy taking photos that represent a curated collection of moments, emotions, and stories.
           </p>
