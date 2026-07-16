@@ -1,6 +1,5 @@
 import { Camera } from "lucide-react";
 import { usePageTitle } from "@/hooks/usePageTitle";
-import { Card, CardContent } from "@/components/ui/card";
 import SiteNav from "@/components/SiteNav";
 
 type Photo = { src: string; alt: string; caption: string; objectPosition?: string };
@@ -58,17 +57,13 @@ const Photos = () => {
         </div>
 
         <div className="mb-16">
-          <Card className="border-0 bg-[#2d2d2d]/80 backdrop-blur-sm">
-            <CardContent className="p-8">
-              <h2 className="text-2xl font-bold text-foreground/90 mb-4">About This Collection</h2>
-              <p className="text-foreground/90 text-lg leading-relaxed mb-4">
-                All of these photos were either shot on an iPhone or a disposable film camera. I am by no means a professional photographer. But, I do enjoy taking photos that represent a curated collection of moments, emotions, and stories.
-              </p>
-              <p className="text-foreground/90 text-lg leading-relaxed">
-                Photos are a great way for me to capture moments in my life. I hope you enjoy!
-              </p>
-            </CardContent>
-          </Card>
+          <h2 className="text-2xl font-bold text-foreground/90 mb-4">About This Collection</h2>
+          <p className="text-foreground/90 text-xl leading-relaxed mb-4">
+            All of these photos were either shot on an iPhone or a disposable film camera. I am by no means a professional photographer. But, I do enjoy taking photos that represent a curated collection of moments, emotions, and stories.
+          </p>
+          <p className="text-foreground/90 text-xl leading-relaxed">
+            Photos are a great way for me to capture moments in my life. I hope you enjoy!
+          </p>
         </div>
 
         <div className="space-y-16">
