@@ -52,7 +52,7 @@ const Photos = () => {
           </h1>
         </div>
 
-        <div className="max-w-[800px] mx-auto mb-16">
+        <div className="max-w-[800px] mx-auto px-6 mb-16">
           <p className="text-foreground/90 text-xl leading-relaxed mb-4">
             All of these photos were either shot on an iPhone or a disposable film camera. I am by no means a professional photographer. But, I do enjoy taking photos that represent a curated collection of moments, emotions, and stories.
           </p>
