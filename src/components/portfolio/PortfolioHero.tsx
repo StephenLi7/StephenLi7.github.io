@@ -44,34 +44,31 @@ const PortfolioHero = () => {
       <p className="text-xl text-foreground/90 mb-8">Data and Product Enthusiast</p>
       
       <div className="flex flex-wrap justify-center gap-3 mb-8">
-        <Button 
-          variant="outline" 
-          size="sm" 
-          className="hover:bg-[#66666e]/20 border-[#9999a1] text-foreground/90 hover:text-[#cbf3f0]"
+        <Button
+          size="sm"
+          className="bg-white hover:bg-[#e6e6e9] text-[#121212] shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
           onClick={handleContactClick}
         >
           <Mail className="w-4 h-4 mr-2" />
           Contact
         </Button>
-        <Button 
-          variant="outline" 
-          size="sm" 
-          className="hover:bg-[#66666e]/20 border-[#9999a1] text-foreground/90 hover:text-[#cbf3f0]"
+        <Button
+          size="sm"
+          className="bg-white hover:bg-[#e6e6e9] text-[#121212] shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
           onClick={handleLinkedInClick}
         >
           <Linkedin className="w-4 h-4 mr-2" />
           LinkedIn
         </Button>
         <a href="/Resume_Stephen_Li.pdf" target="_blank" rel="noopener noreferrer">
-          <Button variant="outline" size="sm" className="hover:bg-[#66666e]/20 border-[#9999a1] text-foreground/90 hover:text-[#cbf3f0]">
+          <Button size="sm" className="bg-white hover:bg-[#e6e6e9] text-[#121212] shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
             <Download className="w-4 h-4 mr-2" />
             My Resume
           </Button>
         </a>
-        <Button 
-          variant="outline" 
-          size="sm" 
-          className="hover:bg-[#66666e]/20 border-[#9999a1] text-foreground/90 hover:text-[#cbf3f0]"
+        <Button
+          size="sm"
+          className="bg-white hover:bg-[#e6e6e9] text-[#121212] shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
           onClick={handleGitHubClick}
         >
           <Github className="w-4 h-4 mr-2" />
