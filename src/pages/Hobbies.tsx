@@ -44,7 +44,7 @@ const Hobbies = () => {
             Outside of work and the daily hustle and bustle, I enjoy a variety of hobbies. I have always played sports and love being outdoors, but have discovered more creative and hands on ones in recent years.
           </p>
           <p className="text-xl text-foreground/90 mt-4">
-            I appreciate that different hobbies provide an opportunity to learn something new, and the challenge that comes with it. If you share similar interests, I'd love to exchange recommendations!
+            I love the grind needed to improve in sports and other physical activities, but also the opportunity to learn something new in others. If you share similar interests, I'd love to exchange recommendations!
           </p>
         </div>
 
@@ -109,6 +109,7 @@ const Hobbies = () => {
                   { src: "/images/vb_playing_nyc.jpg", alt: "Playing volleyball in NYC", caption: "Playing with friends in NYC" },
                   { src: "/images/vb_grass_tournament.png", alt: "Grass volleyball tournament", caption: "Competing in a grass volleyball tournament", objectPosition: "center 32%" },
                   { src: "/images/vb_usav_coaching.jpg", alt: "Coaching at USAV Nationals", caption: "Coaching in the Open Division at USAV Nationals in 2024" },
+                  { src: "/images/vb_tournament_team.jpg", alt: "Team photo post tournament", caption: "Team photo post tournament" },
                 ]} />
               </div>
             </CardHeader>
@@ -149,6 +150,7 @@ const Hobbies = () => {
                 { src: "/images/mountain_skiing.png", alt: "Night skiing", caption: "Night ski at Brighton Ski Resort" },
                 { src: "/images/mountain_rocks.png", alt: "Kings and Queens of Corbets", caption: "Kings and Queens of Corbets" },
                 { src: "/images/rusutsu.jpg", alt: "Skiing at Rusutsu", caption: "Skiing powder at Rusutsu Resort in Hokkaido" },
+                { src: "/images/mountain_kirkwood.jpg", alt: "Chutes near The Wall at Kirkwood", caption: "Chutes near The Wall at Kirkwood" },
               ]} />
             </CardHeader>
           </Card>
@@ -161,7 +163,7 @@ const Hobbies = () => {
                 <CardTitle className="text-2xl text-foreground/90">Hiking</CardTitle>
               </div>
               <CardDescription className="text-lg text-foreground/90 mb-6">
-                Hiking is my favorite way to explore the outdoors. I love finding trails that lead to a great view — whether that's a mountain summit, a valley overlook, or a hidden waterfall. In the long term, I hope to visit every US National Park and tackle some of the world's great long-distance trails.
+                When it's not ski season, I love to hike and explore the outdoors. It's a surreal feeling hiking for hours, reaching the top, and seeing a breathtaking view. Here are some of the memorable hikes I've done. In the long term, I hope to visit every US National Park and tackle some of my bucketlist hikes like Mt. Kilimanjaro, the Inca Trail, and Torres del Paine.
               </CardDescription>
               <PhotoGrid photos={[
                 { src: "/images/rock_climbing.png", alt: "Half Dome cables", caption: "Before climbing the cables of Half Dome" },
@@ -181,9 +183,13 @@ const Hobbies = () => {
                 <Sprout className="w-8 h-8 text-foreground/90" />
                 <CardTitle className="text-2xl text-foreground/90">Gardening</CardTitle>
               </div>
-              <CardDescription className="text-lg text-foreground/90">
-                Gardening is a newer hobby I've picked up and have really enjoyed. There's something satisfying about growing things from scratch and watching them develop over time. Photos coming soon!
+              <CardDescription className="text-lg text-foreground/90 mb-6">
+                Gardening is a newer hobby I've picked up that I find a lot of peace in. Learning about the unique needs of different plants, and how to take care of and cultivate new ones has been a fun journey. It also helps that I can save on typically expensive heirloom tomatoes!
               </CardDescription>
+              <PhotoGrid photos={[
+                { src: "/images/garden_vegetables.jpg", alt: "Vegetables from the garden", caption: "Vegetables from the garden" },
+                { src: "/images/garden_jasmine.jpg", alt: "Jasmine and other flowers", caption: "Jasmine and other flowers", objectPosition: "center 85%" },
+              ]} />
             </CardHeader>
           </Card>
         </div>
