@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Portfolio from "./pages/Portfolio";
 import Hobbies from "./pages/Hobbies";
 import Photos from "./pages/Photos";
+import Media from "./pages/Media";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/hobbies" element={<Hobbies />} />
           <Route path="/photos" element={<Photos />} />
+          <Route path="/media" element={<Media />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
