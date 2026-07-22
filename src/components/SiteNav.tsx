@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
-type Page = "portfolio" | "hobbies" | "photos";
+type Page = "portfolio" | "hobbies" | "photos" | "media";
 
 interface SiteNavProps {
   current: Page;
@@ -12,6 +12,7 @@ const pages: { id: Page; label: string; to: string }[] = [
   { id: "portfolio", label: "Portfolio", to: "/portfolio" },
   { id: "hobbies",   label: "Hobbies",   to: "/hobbies"   },
   { id: "photos",    label: "Photos",     to: "/photos"    },
+  { id: "media",     label: "Media",      to: "/media"     },
 ];
 
 const SiteNav = ({ current }: SiteNavProps) => (
