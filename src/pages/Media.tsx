@@ -40,12 +40,9 @@ const Media = () => {
       <div className="max-w-[800px] mx-auto px-6 pb-20">
         {/* Header */}
         <div className="mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground/90 mb-16 text-center">
-            My Media
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground/90 text-center">
+            Music, Books, and More
           </h1>
-          <p className="text-xl text-foreground/90">
-            This page is a work in progress. Over time I'll fill it out with the music, books, and other media I've been enjoying.
-          </p>
         </div>
 
         {/* Media Section */}

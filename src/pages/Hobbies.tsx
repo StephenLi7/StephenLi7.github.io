@@ -93,10 +93,10 @@ const Hobbies = () => {
                 <CardTitle className="text-2xl text-foreground/90">Volleyball</CardTitle>
               </div>
               <CardDescription className="text-lg text-foreground/90">
-                I grew up playing volleyball and competing at the USAV Boys Junior Nationals. I played on the UPenn Men's Club Volleyball for a bit as well. Now, I compete in tournaments around the Bay Area and play casually with friends as well.
+                I grew up competing at USAV Boys Junior Nationals and played club volleyball at Penn. These days, I play in tournaments around the Bay Area and pick-up games with friends.
               </CardDescription>
               <CardDescription className="text-lg text-foreground/90 mt-4">
-                Outside of playing, I also coached volleyball part time for 3 years at the Academy of Volleyball. It was awesome mentoring the next generation of athletes and students. I coached a variety of age groups from 13s to 16s and had the honor of coaching a team that was one of the top 24 teams in the country (<a
+                I also coached at the Academy of Volleyball in Redwood City for 3 years, working with players in the U13-U16 age groups - including a team that ranked in the top 24 nationally (<a
                   href="https://results.advancedeventsystems.com/event/PTAwMDAwMzM4MDQ90/divisions/156876/standings"
                   target="_blank"
                   rel="noopener noreferrer"

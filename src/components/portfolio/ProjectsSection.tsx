@@ -23,7 +23,7 @@ const ProjectsSection = () => (
       </CardHeader>
       <CardContent>
         <p className="text-foreground/90 mb-4">
-          Right after graduating from undergrad in the middle of the COVID pandemic, I decided to start a podcast focused on Asian-American topics. The goal was to discuss topics that were relatable to other Asian-Americans and featured my college classmates and friends. We covered a variety of topics, but due to time commitment required to edit and record new episodes, I had to put a pause on the podcast. I really enjoyed the research that went into the topics, and the genuine conversations I had with friends and colleagues. I'm looking to start it up again soon! If you're interested in hearing about a specific topic, you can submit them{" "}
+          Right after graduating and during the COVID pandemic, I started a podcast exploring Asian-American topics and stories, featuring conversations with college classmates and friends. I've since paused it due to the time commitment of editing and recording, but I'm looking to bring it back! Feel free to submit ideas or discussion topics{" "}
           <a
             href="https://forms.gle/Xz8nZZCEc7nr4Kpe8"
             target="_blank"
