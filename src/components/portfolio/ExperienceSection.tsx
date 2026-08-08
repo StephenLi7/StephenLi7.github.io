@@ -5,9 +5,19 @@ import { Badge } from "@/components/ui/badge";
 const ExperienceSection = () => {
   const experiences = [
     {
+      title: "Senior Product Manager",
+      company: "Intuit",
+      period: "July 2026 - Present",
+      description: (
+        <ul className="list-disc list-inside space-y-2"></ul>
+      ),
+      skills: ["Product Management", "Growth Analytics", "A/B Testing and Experimentation"],
+      logo: "/logos/intuit_logo.jpg"
+    },
+    {
       title: "Product Growth Analyst",
       company: "Meta",
-      period: "July 2025 - Present",
+      period: "July 2025 - July 2026",
       description: (
         <div>
           <p className="font-semibold text-foreground/90 mb-2">Facebook Notifications</p>
@@ -19,7 +29,7 @@ const ExperienceSection = () => {
           </ul>
         </div>
       ),
-      skills: ["SQL", "A/B Testing and Experimentation", "Dashboard Building (internal tools)", "Python", "ML Training", "Claude Code"],
+      skills: ["SQL", "A/B Testing and Experimentation", "Dashboard Building (internal tools)", "Python", "ML Training", "Claude Code", "Product Management"],
       logo: "/logos/meta_logo.jpg"
     },
     {
