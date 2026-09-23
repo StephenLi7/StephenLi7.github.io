@@ -11,7 +11,7 @@ const ExperienceSection = () => {
       description: (
         <ul className="list-disc list-inside space-y-2"></ul>
       ),
-      skills: ["Product Management", "Growth Analytics", "A/B Testing and Experimentation"],
+      skills: ["Product Management", "Data-Driven Growth", "A/B Testing and Experimentation", "Product Strategy & Roadmapping", "Cross-functional Leadership"],
       logo: "/logos/intuit_logo.jpg"
     },
     {
